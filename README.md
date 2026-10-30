@@ -14,13 +14,15 @@ This snapshot supplies original proofs, saved domain/lift/coefficient-certificat
 
 I seek static scrutiny of whether the composition follows from the stated premises, including parameter ranges, operations, costs, inference directions, and missing or circular dependencies. This draft does not claim a completed reproof of every premise. Whether to undertake a review is the reader's decision; corrections will be reflected in the materials.
 
-Related submission: ACC-P000019. The references below are relative links within this snapshot. No fictitious public repository URL or commit is supplied. Whether to publish remains a separate decision.
+Related submission: ACC-P000019. The references below are relative links within this snapshot. Status labels in manifests and inspection records describe the preparation stage of their recorded version. The repository's live visibility is determined by GitHub settings; this text does not assume a future public release.
 
 ## Reading order
 
 Read the [model](materials/math/PROBLEM.md), [interface contracts](materials/math/DEPENDENCY_CONTRACTS.md), [composition](materials/math/COMPOSITION_PROOF.md), then the [mathematical evidence index](materials/math/INDEX.md). This is composition under explicit mathematical interfaces, not a completed independent reproof of all dependencies. Necessary premises, methods, formalization scope and limits are visible; the earlier private staged-disclosure workflow is not imposed on this public selection.
 
-The complete [P7 original Proof](materials/p7/PROOF.md) and the earlier [cover excerpt](materials/math/evidence/upstream/cover.md) have different bytes. [SOURCE_MAP.json](SOURCE_MAP.json) records their exact line projection without classifying the omitted lines. The legacy [008](materials/g2/B008/PROOF.txt)/[009](materials/g2/B009/PROOF.txt) Proofs clarify an assumed B009 interface. [G3 source index](materials/g3/SOURCE_INDEX.json) supplies 35 local sources for reading propositions and premises.
+The composition file retains the supplied numbering and begins at §3; the model, candidate statement and interfaces are given in [PROBLEM.md](materials/math/PROBLEM.md) and [DEPENDENCY_CONTRACTS.md](materials/math/DEPENDENCY_CONTRACTS.md). Some source documents retain historical reviewer-facing instructions; they do not impose staged access on this selection.
+
+The complete [P7 original Proof](materials/p7/PROOF.md) and the earlier [cover excerpt](materials/math/evidence/upstream/cover.md) have different bytes. [SOURCE_MAP.json](SOURCE_MAP.json) records their exact line projection without classifying the omitted lines. The legacy [008](materials/g2/B008/PROOF.txt)/[009](materials/g2/B009/PROOF.txt) Proofs clarify an assumed B009 interface. Author-stage status and OPEN labels in the P7/G2 Proofs are historical records; see [guide §3](docs/AI_EVALUATION_RECORD_GUIDE.md#3-原票のopenと現在の合成候補) to distinguish them from the explicit-premise composition presented here. [G3 source index](materials/g3/SOURCE_INDEX.json) supplies 35 local sources for reading propositions and premises.
 
 ## Checks and limits
 

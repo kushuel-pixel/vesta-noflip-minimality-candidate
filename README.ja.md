@@ -14,13 +14,15 @@
 
 お願いしたいのは、明示前提から合成が導かれるか、n域・操作・費用・推論方向・依存の循環や不足を静的に点検していただくことです。前提自体の全再証明を今回完了したとはしていません。点検を引き受けるかどうかは読者の判断であり、指摘は訂正に反映します。
 
-関連提出はACC-P000019です。以下の参照はこのsnapshot内の相対リンクで、架空の公開repo URLやcommitは付けていません。公開するかどうかは別判断です。
+関連提出はACC-P000019です。以下の参照はこのsnapshot内の相対リンクです。manifestや点検記録の状態ラベルは、保存版の作成段階を表します。repoの現在の可視性はGitHubの実設定で確認するもので、この本文は公開予定を既成事実としていません。
 
 ## 読む順序
 
 [モデル](materials/math/PROBLEM.md)→[interface表](materials/math/DEPENDENCY_CONTRACTS.md)→[合成本文](materials/math/COMPOSITION_PROOF.md)→[数学証拠索引](materials/math/INDEX.md)を提案します。依頼は明示前提下の合成の静的点検で、全依存の独立再証明を完了したという意味ではありません。必要な方法・形式化範囲・前提・限界は開示し、私的な初回/後読の配布方式をこの公開選択へ自動移植しません。
 
-[P7原Proof全文](materials/p7/PROOF.md)と[cover抜粋](materials/math/evidence/upstream/cover.md)は別bytesで、除外行の内容を分類せず正確な行投影を[SOURCE_MAP](SOURCE_MAP.json)へ記しました。旧[008](materials/g2/B008/PROOF.txt)/[009](materials/g2/B009/PROOF.txt)は仮定するB009 interfaceの理解用、[G3原35ソース索引](materials/g3/SOURCE_INDEX.json)は命題と前提を静的に読むためのものです。
+合成本文は原本の節番号を保って§3から始まり、対象・候補命題・依存interfaceは[PROBLEM.md](materials/math/PROBLEM.md)と[DEPENDENCY_CONTRACTS.md](materials/math/DEPENDENCY_CONTRACTS.md)にあります。一部の原資料には当時の査読者向け文言が残りますが、この選抜へ段階的なアクセス制限を課すものではありません。
+
+[P7原Proof全文](materials/p7/PROOF.md)と[cover抜粋](materials/math/evidence/upstream/cover.md)は別bytesで、除外行の内容を分類せず正確な行投影を[SOURCE_MAP](SOURCE_MAP.json)へ記しました。旧[008](materials/g2/B008/PROOF.txt)/[009](materials/g2/B009/PROOF.txt)は仮定するB009 interfaceの理解用です。P7/G2原Proofの作者段階の状態・OPENは歴史記録であり、ここで提示する明示前提付き合成との区別は[案内§3](docs/AI_EVALUATION_RECORD_GUIDE.md#3-原票のopenと現在の合成候補)を参照してください。[G3原35ソース索引](materials/g3/SOURCE_INDEX.json)は命題と前提を静的に読むためのものです。
 
 ## 検証と限界
 

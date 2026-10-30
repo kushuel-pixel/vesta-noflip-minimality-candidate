@@ -42,7 +42,7 @@
   "limit": "Scoped pattern/reference inspection is not mathematical validation or a reproduced execution environment.",
   "record_role": "Historical base export observations; top-level original counts apply to the base commit.",
   "historical_base_commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
-  "current_documentation_update": {
+  "historical_documentation_update_002": {
     "revision": "002",
     "date_utc": "2026-10-30",
     "state": "private repository candidate, not published",
@@ -62,6 +62,19 @@
     "mathematical_evidence_bytes_changed": false,
     "new_mathematical_or_Lean_execution": false,
     "sensitive_information_scan_scope": "Changed repository text files only; unchanged base relies on its historical inspection.",
-    "sensitive_information_pattern_findings": 0
+    "sensitive_information_pattern_findings": 0,
+    "recorded_commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31"
+  },
+  "current_documentation_update": {
+    "revision": "003 candidate",
+    "date_utc": "2026-10-30",
+    "record_role": "LOCAL preparation record; not the repository live visibility",
+    "scope": "README/assessment-guide clarification and necessary provenance only",
+    "Markdown_links_checked": 65,
+    "missing_Markdown_links": 0,
+    "original_mathematical_source_bytes_changed": false,
+    "new_math_Lean_target_execution": false,
+    "private_information_scope": "six candidate overlay files",
+    "sensitive_information_findings": 0
   }
 }
