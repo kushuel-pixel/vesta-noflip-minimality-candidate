@@ -1,0 +1,157 @@
+import Verify.ResearchWords
+
+/-!
+An explicit rational group carrying four polynomial coordinates. The third
+coordinate uses the AB multiplication convention, unlike the central c of
+Verify.QModel.Q. The fourth is an AAB-type coordinate. Identification with an
+independently defined Magnus series is not asserted in this module.
+-/
+namespace Candidate.AABModel
+
+@[ext]
+structure H where
+  a : ℚ
+  b : ℚ
+  c : ℚ
+  d : ℚ
+  deriving DecidableEq
+
+def coordinates : H ≃ ℚ × ℚ × ℚ × ℚ where
+  toFun p := (p.a,p.b,p.c,p.d)
+  invFun p := ⟨p.1,p.2.1,p.2.2.1,p.2.2.2⟩
+  left_inv _ := rfl
+  right_inv _ := rfl
+
+instance instMulH : Mul H :=
+  ⟨fun p q => ⟨p.a+q.a,p.b+q.b,p.c+q.c+p.a*q.b,
+    p.d+q.d+p.a*q.c+p.a*(p.a-1)*q.b/2⟩⟩
+instance instOneH : One H := ⟨⟨0,0,0,0⟩⟩
+instance instInvH : Inv H :=
+  ⟨fun p => ⟨-p.a,-p.b,-p.c+p.a*p.b,-p.d+p.a*p.c-p.a*(p.a+1)*p.b/2⟩⟩
+
+instance instGroupH : Group H where
+  mul := instMulH.mul
+  one := instOneH.one
+  inv := instInvH.inv
+  mul_assoc p q r := by
+    apply H.ext
+    · change (p.a+q.a)+r.a=p.a+(q.a+r.a)
+      ring
+    · change (p.b+q.b)+r.b=p.b+(q.b+r.b)
+      ring
+    · change (p.c+q.c+p.a*q.b)+r.c+(p.a+q.a)*r.b=
+        p.c+(q.c+r.c+q.a*r.b)+p.a*(q.b+r.b)
+      ring
+    · change (p.d+q.d+p.a*q.c+p.a*(p.a-1)*q.b/2)+r.d+
+        (p.a+q.a)*r.c+(p.a+q.a)*(p.a+q.a-1)*r.b/2=
+        p.d+(q.d+r.d+q.a*r.c+q.a*(q.a-1)*r.b/2)+
+          p.a*(q.c+r.c+q.a*r.b)+p.a*(p.a-1)*(q.b+r.b)/2
+      ring
+  one_mul p := by
+    apply H.ext
+    · change 0+p.a=p.a
+      ring
+    · change 0+p.b=p.b
+      ring
+    · change 0+p.c+0*p.b=p.c
+      ring
+    · change 0+p.d+0*p.c+0*(0-1)*p.b/2=p.d
+      ring
+  mul_one p := by
+    apply H.ext
+    · change p.a+0=p.a
+      ring
+    · change p.b+0=p.b
+      ring
+    · change p.c+0+p.a*0=p.c
+      ring
+    · change p.d+0+p.a*0+p.a*(p.a-1)*0/2=p.d
+      ring
+  inv_mul_cancel p := by
+    apply H.ext
+    · change -p.a+p.a=0
+      ring
+    · change -p.b+p.b=0
+      ring
+    · change (-p.c+p.a*p.b)+p.c+(-p.a)*p.b=0
+      ring
+    · change (-p.d+p.a*p.c-p.a*(p.a+1)*p.b/2)+p.d+
+        (-p.a)*p.c+(-p.a)*((-p.a)-1)*p.b/2=0
+      ring
+
+@[simp] theorem mul_a (p q : H) : (p*q).a=p.a+q.a := rfl
+@[simp] theorem mul_b (p q : H) : (p*q).b=p.b+q.b := rfl
+@[simp] theorem mul_c (p q : H) : (p*q).c=p.c+q.c+p.a*q.b := rfl
+@[simp] theorem mul_d (p q : H) :
+    (p*q).d=p.d+q.d+p.a*q.c+p.a*(p.a-1)*q.b/2 := rfl
+@[simp] theorem one_a : (1:H).a=0 := rfl
+@[simp] theorem one_b : (1:H).b=0 := rfl
+@[simp] theorem one_c : (1:H).c=0 := rfl
+@[simp] theorem one_d : (1:H).d=0 := rfl
+@[simp] theorem inv_a (p : H) : p⁻¹.a= -p.a := rfl
+@[simp] theorem inv_b (p : H) : p⁻¹.b= -p.b := rfl
+@[simp] theorem inv_c (p : H) : p⁻¹.c= -p.c+p.a*p.b := rfl
+@[simp] theorem inv_d (p : H) : p⁻¹.d= -p.d+p.a*p.c-p.a*(p.a+1)*p.b/2 := rfl
+
+theorem mul_coordinates (p q : H) :
+    p*q=⟨p.a+q.a,p.b+q.b,p.c+q.c+p.a*q.b,
+      p.d+q.d+p.a*q.c+p.a*(p.a-1)*q.b/2⟩ := rfl
+
+theorem inv_coordinates (p : H) :
+    p⁻¹=⟨-p.a,-p.b,-p.c+p.a*p.b,-p.d+p.a*p.c-p.a*(p.a+1)*p.b/2⟩ := rfl
+
+def hx : H := ⟨1,0,0,0⟩
+def hy : H := ⟨0,1,0,0⟩
+
+theorem conj_hx (p : H) :
+    hx*p*hx⁻¹=⟨p.a,p.b,p.c+p.b,p.d+p.c⟩ := by
+  apply H.ext <;> simp [hx] <;> ring
+
+theorem conj_hx_inv (p : H) :
+    hx⁻¹*p*hx=⟨p.a,p.b,p.c-p.b,p.d-p.c+p.b⟩ := by
+  apply H.ext <;> simp [hx] <;> ring
+
+theorem conj_hy (p : H) :
+    hy*p*hy⁻¹=⟨p.a,p.b,p.c-p.a,p.d-p.a*(p.a-1)/2⟩ := by
+  apply H.ext <;> simp [hy] <;> ring
+
+theorem conj_hy_inv (p : H) :
+    hy⁻¹*p*hy=⟨p.a,p.b,p.c+p.a,p.d+p.a*(p.a-1)/2⟩ := by
+  apply H.ext <;> simp [hy] <;> ring
+
+def toH : Verify.F →* H :=
+  FreeGroup.lift (fun i : Fin 2 => if i=0 then hx else hy)
+
+@[simp] theorem toH_x : toH Verify.x=hx := by simp [toH,Verify.x]
+@[simp] theorem toH_y : toH Verify.y=hy := by simp [toH,Verify.y]
+@[simp] theorem toH_X : toH Verify.X=hx⁻¹ := by simp [Verify.X]
+@[simp] theorem toH_Y : toH Verify.Y=hy⁻¹ := by simp [Verify.Y]
+
+/-- Sufficient for the repeated ID2/ID5 factors in the B skeleton. -/
+theorem pow_a_zero (p : H) (ha : p.a=0) (t : ℕ) :
+    p^t=⟨0,(t:ℚ)*p.b,(t:ℚ)*p.c,(t:ℚ)*p.d⟩ := by
+  induction t with
+  | zero => apply H.ext <;> simp
+  | succ t ih =>
+    rw [pow_succ,ih]
+    apply H.ext <;> simp [ha,Nat.cast_add,Nat.cast_one] <;> ring
+
+theorem hy_pow (n : ℕ) : hy^n=⟨0,(n:ℚ),0,0⟩ := by
+  simpa [hy] using pow_a_zero hy rfl n
+
+theorem hy_inv_pow (n : ℕ) : hy⁻¹^n=⟨0,-(n:ℚ),0,0⟩ := by
+  rw [inv_pow,hy_pow]
+  apply H.ext <;> simp
+
+theorem toH_uFamily (n : ℕ) :
+    toH (Verify.ResearchWords.uFamily n)=⟨0,-1,-(n:ℚ),(n:ℚ)⟩ := by
+  simp only [Verify.ResearchWords.uFamily,map_mul,map_pow,toH_X,toH_y,toH_x,
+    toH_Y,hy_pow,hy_inv_pow]
+  apply H.ext <;> simp [hx,Nat.cast_add,Nat.cast_one] <;> ring
+
+theorem toH_vFamily (n : ℕ) :
+    toH (Verify.ResearchWords.vFamily n)=⟨1,-(n:ℚ),-(n:ℚ),0⟩ := by
+  simp only [Verify.ResearchWords.vFamily,map_mul,map_pow,toH_x,toH_Y,hy_inv_pow]
+  apply H.ext <;> simp [hx]
+
+end Candidate.AABModel

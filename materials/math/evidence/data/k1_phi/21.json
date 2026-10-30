@@ -1,0 +1,419 @@
+{
+  "family_id": 21,
+  "input_family": {
+    "family_id": 21,
+    "kind": "N_ONLY",
+    "variables": [
+      "n"
+    ],
+    "domain": "n integer >=25",
+    "raw_runs": [
+      [
+        3,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        6,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            2
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        11,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      ]
+    ],
+    "source_family_ids": [
+      21
+    ]
+  },
+  "source_system_index": 5,
+  "moves": [
+    6,
+    11
+  ],
+  "prefix_matrices": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "gaps": [
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          1,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          4,
+          1
+        ]
+      }
+    ]
+  ],
+  "source_multipliers": [
+    2,
+    2
+  ],
+  "substituted_source_equations": [
+    [],
+    []
+  ],
+  "w_phi": [
+    [],
+    []
+  ],
+  "w_phi_text": [
+    "0",
+    "0"
+  ],
+  "direct_H": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [],
+      []
+    ],
+    [
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      []
+    ]
+  ],
+  "solution": {
+    "kind": "ALL_DOMAIN",
+    "equivalence": "Both substituted equations identically zero."
+  },
+  "lifts": [
+    {
+      "reduced_family_id": 21,
+      "case": "all n>=25",
+      "source_family_id": 21,
+      "source_occurrences": [
+        25,
+        27
+      ],
+      "parameter_map": null
+    }
+  ],
+  "occurrences": [
+    {
+      "occurrence_id": 25,
+      "cell_id": 1086,
+      "class_id": 189,
+      "placement_index": 971,
+      "template_id": 71,
+      "slot_indices": [
+        1,
+        4
+      ],
+      "moves": [
+        6,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 21,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 27,
+      "cell_id": 1088,
+      "class_id": 189,
+      "placement_index": 972,
+      "template_id": 71,
+      "slot_indices": [
+        1,
+        5
+      ],
+      "moves": [
+        6,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 21,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            4
+          ]
+        ]
+      ]
+    }
+  ]
+}

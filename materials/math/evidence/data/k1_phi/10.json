@@ -1,0 +1,587 @@
+{
+  "family_id": 10,
+  "input_family": {
+    "family_id": 10,
+    "kind": "N_ONLY",
+    "variables": [
+      "n"
+    ],
+    "domain": "n integer >=25",
+    "raw_runs": [
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        11,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            2
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        6,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        4,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            -1
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      ]
+    ],
+    "source_family_ids": [
+      10
+    ]
+  },
+  "source_system_index": 40,
+  "moves": [
+    11,
+    6
+  ],
+  "prefix_matrices": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "gaps": [
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          2,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          5,
+          1
+        ]
+      }
+    ]
+  ],
+  "source_multipliers": [
+    2,
+    2
+  ],
+  "substituted_source_equations": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -1,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -1,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi_text": [
+    "-1*n^2",
+    "-1*n"
+  ],
+  "direct_H": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              2
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "solution": {
+    "kind": "EMPTY",
+    "component": 0,
+    "sign": -1,
+    "positive_after_n_25_plus_N": [
+      {
+        "monomial": [],
+        "coefficient": [
+          625,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            1
+          ]
+        ],
+        "coefficient": [
+          50,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            2
+          ]
+        ],
+        "coefficient": [
+          1,
+          1
+        ]
+      }
+    ],
+    "strict_lower_bound": "625",
+    "equivalence": "On N=n-25>=0, a>=0, signed component has positive constant and nonnegative coefficients, hence cannot vanish. No division by any variable."
+  },
+  "lifts": [
+    {
+      "reduced_family_id": 10,
+      "case": "all n>=25",
+      "source_family_id": 10,
+      "source_occurrences": [
+        12,
+        14
+      ],
+      "parameter_map": null
+    }
+  ],
+  "occurrences": [
+    {
+      "occurrence_id": 12,
+      "cell_id": 848,
+      "class_id": 1652,
+      "placement_index": 614,
+      "template_id": 65,
+      "slot_indices": [
+        2,
+        6
+      ],
+      "moves": [
+        11,
+        6
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u1_0": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "e1": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 10,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            2
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            5
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 14,
+      "cell_id": 854,
+      "class_id": 1652,
+      "placement_index": 624,
+      "template_id": 65,
+      "slot_indices": [
+        3,
+        6
+      ],
+      "moves": [
+        11,
+        6
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u1_0": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "e1": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 10,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            2
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            5
+          ]
+        ]
+      ]
+    }
+  ]
+}

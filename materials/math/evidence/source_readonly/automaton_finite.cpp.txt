@@ -1,0 +1,425 @@
+#include <algorithm>
+#include <array>
+#include <cassert>
+#include <chrono>
+#include <climits>
+#include <cstdint>
+#include <fstream>
+#include <functional>
+#include <iostream>
+#include <limits>
+#include <map>
+#include <sstream>
+#include <stdexcept>
+#include <unordered_map>
+#include <vector>
+using namespace std;
+using ll=long long;
+struct Mat {ll a,b,c,d; bool operator==(const Mat&o)const{return a==o.a&&b==o.b&&c==o.c&&d==o.d;}};
+ll checked(__int128 x){if(x<LLONG_MIN||x>LLONG_MAX)throw runtime_error("integer overflow");return (ll)x;}
+Mat mul(Mat x,Mat y){return {checked((__int128)x.a*y.a+(__int128)x.b*y.c),checked((__int128)x.a*y.b+(__int128)x.b*y.d),checked((__int128)x.c*y.a+(__int128)x.d*y.c),checked((__int128)x.c*y.b+(__int128)x.d*y.d)};}
+Mat inv(Mat x){assert(x.a*x.d-x.b*x.c==1);return {x.d,-x.b,-x.c,x.a};}
+Mat gen(int m){if(m==2)return{1,1,0,1};if(m==3)return{1,-1,0,1};if(m==4)return{1,0,1,1};if(m==5)return{1,0,-1,1};return{1,0,0,1};}
+struct MH{size_t operator()(Mat x)const{uint64_t h=0x9e3779b97f4a7c15ULL;for(ll a:{x.a,x.b,x.c,x.d})h^=(uint64_t)a+0x9e3779b97f4a7c15ULL+(h<<6)+(h>>2);return h;}};
+struct V{ll x,y;bool operator==(const V&o)const{return x==o.x&&y==o.y;}};
+struct VH{size_t operator()(V v)const{return hash<ll>()(v.x)^(hash<ll>()(v.y)+0x9e3779b9+(hash<ll>()(v.x)<<6));}};
+struct H{ll a,b,c,d;bool operator==(const H&o)const{return a==o.a&&b==o.b&&c==o.c&&d==o.d;}};
+ll maxH=0;
+H hm(H x,H y){H z={checked((__int128)x.a+y.a),checked((__int128)x.b+y.b),checked((__int128)x.c+y.c+(__int128)x.a*y.b),checked((__int128)x.d+y.d+(__int128)x.a*y.c+(__int128)x.a*(x.a-1)/2*y.b)};for(ll t:{z.a,z.b,z.c,z.d})maxH=max(maxH,t<0?-t:t);return z;}
+H hi(H x){return {-x.a,-x.b,checked(-(__int128)x.c+(__int128)x.a*x.b),checked(-(__int128)x.d+(__int128)x.a*x.c-(__int128)x.a*(x.a+1)/2*x.b)};}
+H hp(H x,int n){if(n<0){x=hi(x);n=-n;}H y{0,0,0,0};while(n){if(n&1)y=hm(y,x);x=hm(x,x);n>>=1;}return y;}
+using HS=pair<H,H>;
+HS hs(int n,bool swapxy){H x=swapxy?H{0,1,0,0}:H{1,0,0,0},y=swapxy?H{1,0,0,0}:H{0,1,0,0};return{hm(hm(hm(hi(x),hp(y,n)),x),hp(y,-n-1)),hm(x,hp(y,-n))};}
+HS step(HS s,int m,bool swapxy){auto [r,t]=s;H x=swapxy?H{0,1,0,0}:H{1,0,0,0},y=swapxy?H{1,0,0,0}:H{0,1,0,0};if(m==2)return{hm(r,t),t};if(m==3)return{hm(r,hi(t)),t};if(m==4)return{r,hm(t,r)};if(m==5)return{r,hm(t,hi(r))};int k=(m-6)%4;H g=k<2?x:y;if(k%2)g=hi(g);if(m<10)return{hm(hm(g,r),hi(g)),t};return{r,hm(hm(g,t),hi(g))};}
+struct Event{int g,m;V v;};
+struct PairEvent{int x,y;V v;};
+struct Stats{uint64_t skeletons=0,raw[5]{},qpass[5]{},phi[5]{},psi[5]{},freefail[5]{},success[5]{};vector<vector<int>> examples;};
+vector<int> red(const vector<int>&w){vector<int>v;for(int a:w){if(!v.empty()&&v.back()==-a)v.pop_back();else v.push_back(a);}return v;}
+vector<int> wi(const vector<int>&w){vector<int>v;for(auto it=w.rbegin();it!=w.rend();++it)v.push_back(-*it);return v;}
+vector<int> wm(const vector<int>&a,const vector<int>&b){auto v=a;for(int x:b){if(!v.empty()&&v.back()==-x)v.pop_back();else v.push_back(x);}return v;}
+pair<vector<int>,vector<int>> ws(int n){vector<int>r{-1},t{1};r.insert(r.end(),n,2);r.push_back(1);r.insert(r.end(),n+1,-2);t.insert(t.end(),n,-2);return{red(r),red(t)};}
+pair<vector<int>,vector<int>> wstep(pair<vector<int>,vector<int>> s,int m){auto&r=s.first;auto&t=s.second;if(m==2)r=wm(r,t);else if(m==3)r=wm(r,wi(t));else if(m==4)t=wm(t,r);else if(m==5)t=wm(t,wi(r));else{int k=(m-6)%4,g=k<2?1:2;if(k%2)g=-g;auto&z=m<10?r:t;z=wm(wm(vector<int>{g},z),vector<int>{-g});}return s;}
+uint64_t choose(int n,int k){uint64_t a=1;for(int i=1;i<=k;i++)a=a*(n-k+i)/i;return a;}
+uint64_t encode(const vector<int>&b){uint64_t x=0;for(int i=0;i<(int)b.size();i++)x|=(uint64_t)(b[i]-2)<<(2*i);return x;}
+vector<int> decode(uint64_t x,int q){vector<int>b;for(int i=0;i<q;i++)b.push_back(2+((x>>(2*i))&3));return b;}
+ofstream qlog;uint64_t hControlCount=0;
+void analyze(const vector<int>&b,int n,int maxc,Stats&s){
+ int q=b.size();s.skeletons++;uint64_t p8=1;for(int c=0;c<=maxc;c++){s.raw[c]+=choose(q+c,c)*p8;p8*=8;}
+ Mat M{0,-1,1,-n};vector<Event>E;
+ for(int g=0;g<=q;g++){ll a=M.a,z=M.b,c=M.c,d=M.d;array<V,8>v={V{z*d,-z*c},V{-z*d,z*c},V{-a*d,a*c},V{a*d,-a*c},V{-z*d,a*d},V{z*d,-a*d},V{z*c,-a*c},V{-z*c,a*c}};for(int k=0;k<8;k++)E.push_back({g,6+k,v[k]});if(g<q)M=mul(gen(b[g]),M);}
+ assert((M==Mat{1,0,0,1}));
+ V need{-n*n-1,-n};
+ auto run=[&](const vector<int>&ix){
+  int c=ix.size();s.qpass[c]++;vector<int>w;int at=0;for(int g=0;g<=q;g++){while(at<c&&E[ix[at]].g==g){w.push_back(E[ix[at]].m);at++;}if(g<q)w.push_back(b[g]);}
+  assert(at==c);HS f=hs(n,false);for(int m:w)f=step(f,m,false);int outcome=1;
+  bool fgood=(f.first==H{1,0,0,0}&&f.second==H{0,1,0,0});
+  HS z=hs(n,true);for(int m:w)z=step(z,m,true);
+  bool zgood=(z.first==H{0,1,0,0}&&z.second==H{1,0,0,0});
+  if(!fgood)s.phi[c]++;else if(!zgood){s.psi[c]++;outcome=2;}else{
+   auto r=ws(n);for(int m:w)r=wstep(r,m);bool good=(r.first==vector<int>{1}&&r.second==vector<int>{2});
+   if(good){s.success[c]++;outcome=4;if(s.examples.size()<12)s.examples.push_back(w);}else{s.freefail[c]++;outcome=3;}
+  }
+  // Independent word-to-H controls for the first 1000 Q-passing raw words.
+  if(hControlCount<1000){hControlCount++;auto r=ws(n);for(int m:w)r=wstep(r,m);auto image=[&](const vector<int>&v,bool sw){H rr{0,0,0,0};for(int x:v){H g=(abs(x)==1)^(sw)?H{1,0,0,0}:H{0,1,0,0};if(x<0)g=hi(g);rr=hm(rr,g);}return rr;};assert(image(r.first,false)==f.first&&image(r.second,false)==f.second&&image(r.first,true)==z.first&&image(r.second,true)==z.second);}
+  qlog<<"["<<n<<","<<q<<","<<encode(b)<<",[";for(int j=0;j<c;j++){if(j)qlog<<",";qlog<<E[ix[j]].g<<","<<E[ix[j]].m;}qlog<<"],"<<outcome<<"]\n";
+ };
+ unordered_map<V,vector<int>,VH>by;for(int x=0;x<(int)E.size();x++)by[E[x].v].push_back(x);
+ for(int x=0;x<(int)E.size();x++)if(E[x].v==need)run({x});
+ if(maxc>=2)for(int x=0;x<(int)E.size();x++){V rem{need.x-E[x].v.x,need.y-E[x].v.y};auto it=by.find(rem);if(it!=by.end())for(int y:it->second)if(E[x].g<=E[y].g)run({x,y});}
+ if(maxc<3)return;
+ vector<PairEvent>P;unordered_map<V,vector<int>,VH>pb;
+ for(int x=0;x<(int)E.size();x++)for(int y=0;y<(int)E.size();y++)if(E[x].g<=E[y].g){V v{E[x].v.x+E[y].v.x,E[x].v.y+E[y].v.y};pb[v].push_back(P.size());P.push_back({x,y,v});}
+ for(int x=0;x<(int)E.size();x++){V rem{need.x-E[x].v.x,need.y-E[x].v.y};auto it=pb.find(rem);if(it!=pb.end())for(int k:it->second){auto t=P[k];if(E[x].g<=E[t.x].g)run({x,t.x,t.y});}}
+ if(maxc>=4)for(auto t:P){V rem{need.x-t.v.x,need.y-t.v.y};auto it=pb.find(rem);if(it!=pb.end())for(int k:it->second){auto u=P[k];if(E[t.y].g<=E[u.x].g)run({t.x,t.y,u.x,u.y});}}
+}
+void enumerate(int len,Mat m,uint64_t code,const function<void(Mat,uint64_t)>&f,int depth=0){if(depth==len){f(m,code);return;}for(int k=0;k<4;k++)enumerate(len,mul(gen(k+2),m),code|((uint64_t)k<<(2*depth)),f,depth+1);}
+// Author derivative of the previously reviewed finite evaluator. The new
+// enumerator is the all-n finite automaton; all original candidate files kept.
+static const int AUTO_NEXT[314][4]={{1,2,3,4},
+{5,6,7,8},
+{6,-1,10,11},
+{12,13,14,6},
+{15,16,6,17},
+{18,19,20,21},
+{19,-1,23,24},
+{25,26,27,19},
+{28,29,19,30},
+{-1,-1,-1,-1},
+{-1,35,-1,-1},
+{37,-1,-1,-1},
+{-1,23,-1,29},
+{23,42,35,26},
+{-1,44,-1,23},
+{46,24,37,28},
+{24,-1,-1,-1},
+{49,-1,24,-1},
+{18,52,20,21},
+{52,-1,54,55},
+{25,26,27,52},
+{56,29,52,30},
+{-1,-1,-1,-1},
+{-1,61,-1,-1},
+{63,-1,-1,-1},
+{-1,54,-1,29},
+{54,42,61,26},
+{-1,44,-1,54},
+{66,55,63,56},
+{55,-1,-1,-1},
+{67,-1,55,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,75,-1,61},
+{-1,-1,-1,-1},
+{-1,-1,-1,63},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{61,81,82,44},
+{-1,-1,-1,-1},
+{-1,-1,75,-1},
+{-1,-1,-1,-1},
+{-1,63,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,66},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{88,-1,90,91},
+{-1,-1,-1,-1},
+{-1,96,-1,-1},
+{98,-1,-1,-1},
+{101,91,98,102},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,114,-1,96},
+{-1,-1,-1,-1},
+{-1,-1,-1,98},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,98,-1,-1},
+{-1,-1,-1,101},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,145,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{75,-1,157,-1},
+{158,145,159,114},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{88,-1,90,91},
+{-1,-1,-1,-1},
+{-1,96,-1,-1},
+{174,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,114,-1,96},
+{-1,-1,-1,-1},
+{-1,-1,-1,174},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,174,-1,-1},
+{184,91,174,102},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,197,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{197,-1,210,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,213,-1,-1},
+{158,197,159,114},
+{215,216,217,197},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,227},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,227,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{275,-1,276,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,301,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,305,-1,-1},
+{-1,-1,-1,-1},
+{-1,210,-1,-1},
+{210,307,305,216},
+{-1,-1,-1,210},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,227},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{275,-1,276,-1},
+{-1,301,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,301},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,301},
+{-1,-1,-1,-1},
+{305,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1},
+{-1,-1,-1,-1}};
+static const bool AUTO_ACCEPT[314]={false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,true,false,false,false,true,false,false,false,false,false,false,false,false};
+void skeletons_q5(int n,Stats&s){
+ int q=n+5; vector<vector<uint64_t>> count(q+1,vector<uint64_t>(314));
+ for(int i=0;i<314;i++)count[0][i]=AUTO_ACCEPT[i];
+ for(int rem=1;rem<=q;rem++)for(int i=0;i<314;i++)for(int k=0;k<4;k++){int j=AUTO_NEXT[i][k];if(j>=0)count[rem][i]+=count[rem-1][j];}
+ uint64_t expected=3ULL*(n+2)*(n+5)+(uint64_t)n*(n-1)*(3*n*n+7*n-8)/6;
+ assert(count[q][0]==expected); vector<int> rev;
+ function<void(int,int)> walk=[&](int state,int rem){
+  if(!rem){assert(AUTO_ACCEPT[state]);auto word=rev;reverse(word.begin(),word.end());analyze(word,n,2,s);return;}
+  for(int k=0;k<4;k++){int j=AUTO_NEXT[state][k];if(j>=0&&count[rem-1][j]){rev.push_back(k+2);walk(j,rem-1);rev.pop_back();}}
+ }; walk(0,q);assert(s.skeletons==expected);
+}
+void printStats(int n,string category,const Stats&s,double seconds){
+ cout<<"{\"n\":"<<n<<",\"category\":\""<<category<<"\",\"skeletons\":"<<s.skeletons<<",\"raw_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.raw[i];}cout<<"],\"qpass_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.qpass[i];}cout<<"],\"phi_rejected_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.phi[i];}cout<<"],\"psi_rejected_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.psi[i];}cout<<"],\"free_rejected_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.freefail[i];}cout<<"],\"success_by_c\":[";
+ for(int i=0;i<5;i++){if(i)cout<<",";cout<<s.success[i];}cout<<"],\"success_examples\":[";
+ for(size_t i=0;i<s.examples.size();i++){if(i)cout<<",";cout<<"[";for(size_t j=0;j<s.examples[i].size();j++){if(j)cout<<",";cout<<s.examples[i][j];}cout<<"]";}cout<<"],\"seconds\":"<<seconds<<",\"max_abs_H_coordinate\":"<<maxH<<"}"<<endl;
+}
+int main(int argc,char**argv){
+ if(argc<5){cerr<<"usage: verifier nmin nmax A|Q5|B logpath\n";return 2;}
+ int lo=stoi(argv[1]),hiN=stoi(argv[2]);string mode=argv[3];qlog.open(argv[4]);if(!qlog)throw runtime_error("log open failed");
+ for(int n=lo;n<=hiN;n++){Stats s;auto started=chrono::steady_clock::now();
+  if(mode=="A"){for(int i=0;i<=n+1;i++){vector<int>b(i,5);b.push_back(2);b.push_back(5);b.insert(b.end(),n+1-i,2);analyze(b,n,4,s);}}
+  else if(mode=="B"){for(int i=0;i<=n-3;i++)for(int j=0;j<=n-3-i;j++)for(int k=0;k<=n-3-i-j;k++){int e=n-3-i-j-k;vector<int>b(i,5);for(int a:{3,4})b.push_back(a);b.insert(b.end(),j,2);for(int a:{4,3})b.push_back(a);b.insert(b.end(),k,5);for(int a:{3,4})b.push_back(a);b.insert(b.end(),e,2);analyze(b,n,4,s);}}
+  else if(mode=="Q5")skeletons_q5(n,s);else throw runtime_error("bad mode");
+  printStats(n,mode,s,chrono::duration<double>(chrono::steady_clock::now()-started).count());
+ }
+ cerr<<"{\"word_to_H_controls\":"<<hControlCount<<",\"overflow_checks\":\"all checked integer operations\"}"<<endl;
+}
+

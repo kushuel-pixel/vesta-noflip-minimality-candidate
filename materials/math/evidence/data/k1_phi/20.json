@@ -1,0 +1,530 @@
+{
+  "family_id": 20,
+  "input_family": {
+    "family_id": 20,
+    "kind": "N_ONLY",
+    "variables": [
+      "n"
+    ],
+    "domain": "n integer >=25",
+    "raw_runs": [
+      [
+        3,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        12,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            2
+          ]
+        ]
+      ],
+      [
+        7,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0
+            ],
+            1
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      ]
+    ],
+    "source_family_ids": [
+      20
+    ]
+  },
+  "source_system_index": 49,
+  "moves": [
+    12,
+    7
+  ],
+  "prefix_matrices": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "gaps": [
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          1,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          3,
+          1
+        ]
+      }
+    ]
+  ],
+  "source_multipliers": [
+    2,
+    2
+  ],
+  "substituted_source_equations": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -4,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -4,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          -4,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -4,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          -2,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi_text": [
+    "-2*n - 2*n^2",
+    "-2 - 2*n"
+  ],
+  "direct_H": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -2,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              2
+            ]
+          ],
+          "coefficient": [
+            -2,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -2,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -2,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "solution": {
+    "kind": "EMPTY",
+    "component": 0,
+    "sign": -1,
+    "positive_after_n_25_plus_N": [
+      {
+        "monomial": [],
+        "coefficient": [
+          1300,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            1
+          ]
+        ],
+        "coefficient": [
+          102,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            2
+          ]
+        ],
+        "coefficient": [
+          2,
+          1
+        ]
+      }
+    ],
+    "strict_lower_bound": "1300",
+    "equivalence": "On N=n-25>=0, a>=0, signed component has positive constant and nonnegative coefficients, hence cannot vanish. No division by any variable."
+  },
+  "lifts": [
+    {
+      "reduced_family_id": 20,
+      "case": "all n>=25",
+      "source_family_id": 20,
+      "source_occurrences": [
+        24
+      ],
+      "parameter_map": null
+    }
+  ],
+  "occurrences": [
+    {
+      "occurrence_id": 24,
+      "cell_id": 1085,
+      "class_id": 189,
+      "placement_index": 970,
+      "template_id": 71,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        12,
+        7
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 20,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    }
+  ]
+}

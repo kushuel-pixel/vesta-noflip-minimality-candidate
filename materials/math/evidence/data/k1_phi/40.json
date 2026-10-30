@@ -1,0 +1,1195 @@
+{
+  "family_id": 40,
+  "input_family": {
+    "family_id": 40,
+    "kind": "SPLIT",
+    "variables": [
+      "n",
+      "a"
+    ],
+    "domain": "n integer >=25; a integer, 0<=a<=n",
+    "raw_runs": [
+      [
+        2,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        10,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        3,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        11,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        5,
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ]
+      ],
+      [
+        2,
+        [
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ]
+        ]
+      ]
+    ],
+    "source_family_ids": [
+      30,
+      32,
+      28,
+      26,
+      48,
+      50,
+      52
+    ]
+  },
+  "source_system_index": 37,
+  "moves": [
+    10,
+    11
+  ],
+  "prefix_matrices": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        },
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -1,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "gaps": [
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          1,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [],
+        "coefficient": [
+          3,
+          1
+        ]
+      }
+    ]
+  ],
+  "source_multipliers": [
+    2,
+    2
+  ],
+  "substituted_source_equations": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -4,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -4,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi": [
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            2
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ],
+    [
+      {
+        "monomial": [
+          [
+            "n",
+            1
+          ]
+        ],
+        "coefficient": [
+          -2,
+          1
+        ]
+      }
+    ]
+  ],
+  "w_phi_text": [
+    "-2*n^2",
+    "-2*n"
+  ],
+  "direct_H": [
+    [
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              2
+            ]
+          ],
+          "coefficient": [
+            -2,
+            1
+          ]
+        }
+      ]
+    ],
+    [
+      [],
+      [
+        {
+          "monomial": [],
+          "coefficient": [
+            1,
+            1
+          ]
+        }
+      ],
+      [],
+      [
+        {
+          "monomial": [
+            [
+              "n",
+              1
+            ]
+          ],
+          "coefficient": [
+            -2,
+            1
+          ]
+        }
+      ]
+    ]
+  ],
+  "solution": {
+    "kind": "EMPTY",
+    "component": 0,
+    "sign": -1,
+    "positive_after_n_25_plus_N": [
+      {
+        "monomial": [],
+        "coefficient": [
+          1250,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            1
+          ]
+        ],
+        "coefficient": [
+          100,
+          1
+        ]
+      },
+      {
+        "monomial": [
+          [
+            "N",
+            2
+          ]
+        ],
+        "coefficient": [
+          2,
+          1
+        ]
+      }
+    ],
+    "strict_lower_bound": "1250",
+    "equivalence": "On N=n-25>=0, a>=0, signed component has positive constant and nonnegative coefficients, hence cannot vanish. No division by any variable."
+  },
+  "lifts": [
+    {
+      "reduced_family_id": 40,
+      "case": "a=0",
+      "source_family_id": 32,
+      "source_occurrences": [
+        40
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "a=1",
+      "source_family_id": 28,
+      "source_occurrences": [
+        34,
+        38
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "a=n-3",
+      "source_family_id": 26,
+      "source_occurrences": [
+        32
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "a=n-2",
+      "source_family_id": 48,
+      "source_occurrences": [
+        64
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "a=n-1",
+      "source_family_id": 50,
+      "source_occurrences": [
+        66
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "a=n",
+      "source_family_id": 52,
+      "source_occurrences": [
+        68
+      ],
+      "parameter_map": null
+    },
+    {
+      "reduced_family_id": 40,
+      "case": "2<=a<=n-4",
+      "source_family_id": 30,
+      "source_occurrences": [
+        36
+      ],
+      "parameter_map": {
+        "source_family_t": "n-4-a"
+      }
+    }
+  ],
+  "occurrences": [
+    {
+      "occurrence_id": 32,
+      "cell_id": 1411,
+      "class_id": 287,
+      "placement_index": 1576,
+      "template_id": 79,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ],
+        "u1_0": []
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ],
+        "e1": []
+      },
+      "family_id": 26,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 34,
+      "cell_id": 1413,
+      "class_id": 287,
+      "placement_index": 1576,
+      "template_id": 79,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [],
+        "u1_0": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "e1": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 28,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 36,
+      "cell_id": 1415,
+      "class_id": 3252,
+      "placement_index": 1576,
+      "template_id": 79,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n",
+        "t"
+      ],
+      "domain": "n integer >=25; t integer, 0<=t<=n-6",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ]
+        ],
+        "u1_0": [
+          [
+            [
+              0,
+              0
+            ],
+            -5
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0,
+              0
+            ],
+            2
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            1
+          ]
+        ],
+        "e1": [
+          [
+            [
+              0,
+              0
+            ],
+            -5
+          ],
+          [
+            [
+              0,
+              1
+            ],
+            -1
+          ],
+          [
+            [
+              1,
+              0
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 30,
+      "family_parameter_map": "family_t=n-6-t",
+      "original_gaps": [
+        [
+          [
+            [
+              0,
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 38,
+      "cell_id": 1418,
+      "class_id": 287,
+      "placement_index": 1577,
+      "template_id": 79,
+      "slot_indices": [
+        1,
+        4
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u1_0": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "e1": [
+          [
+            [
+              0
+            ],
+            -4
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 28,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 40,
+      "cell_id": 1420,
+      "class_id": 2423,
+      "placement_index": 1578,
+      "template_id": 79,
+      "slot_indices": [
+        1,
+        5
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [],
+        "u1_0": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [],
+        "e1": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 32,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 64,
+      "cell_id": 2841,
+      "class_id": 4853,
+      "placement_index": 4063,
+      "template_id": 183,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 48,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 66,
+      "cell_id": 3393,
+      "class_id": 4853,
+      "placement_index": 6483,
+      "template_id": 308,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 50,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    },
+    {
+      "occurrence_id": 68,
+      "cell_id": 4122,
+      "class_id": 4853,
+      "placement_index": 9430,
+      "template_id": 518,
+      "slot_indices": [
+        1,
+        3
+      ],
+      "moves": [
+        10,
+        11
+      ],
+      "variables": [
+        "n"
+      ],
+      "domain": "n integer >=25",
+      "fragment_values": {
+        "u0_0": [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        "u0_1": [
+          [
+            [
+              0
+            ],
+            -3
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "original_exponents": {
+        "e0": [
+          [
+            [
+              0
+            ],
+            -2
+          ],
+          [
+            [
+              1
+            ],
+            1
+          ]
+        ]
+      },
+      "family_id": 52,
+      "family_parameter_map": "none",
+      "original_gaps": [
+        [
+          [
+            [
+              0
+            ],
+            1
+          ]
+        ],
+        [
+          [
+            [
+              0
+            ],
+            3
+          ]
+        ]
+      ]
+    }
+  ]
+}

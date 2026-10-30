@@ -1,0 +1,143 @@
+import AABGroup
+import Verify.AtomicSemantics
+
+/-! Exact transport of every original valid operation to the explicit rational
+group. No claim of identification with a separate Magnus-series definition is
+made; the fourth-coordinate obstruction is valid directly via the group map. -/
+namespace Candidate.AABDynamics
+open Candidate.AABModel
+abbrev Move := Verify.AtomicSemantics.Move
+abbrev HState := H × H
+
+def mapState (s : Verify.AtomicSemantics.GroupState) : HState := (toH s.1,toH s.2)
+
+def hStep : Move → HState → HState
+  | .m0,(p,q) => (p⁻¹,q)
+  | .m1,(p,q) => (p,q⁻¹)
+  | .m2,(p,q) => (p*q,q)
+  | .m3,(p,q) => (p*q⁻¹,q)
+  | .m4,(p,q) => (p,q*p)
+  | .m5,(p,q) => (p,q*p⁻¹)
+  | .m6,(p,q) => (hx*p*hx⁻¹,q)
+  | .m7,(p,q) => (hx⁻¹*p*hx,q)
+  | .m8,(p,q) => (hy*p*hy⁻¹,q)
+  | .m9,(p,q) => (hy⁻¹*p*hy,q)
+  | .m10,(p,q) => (p,hx*q*hx⁻¹)
+  | .m11,(p,q) => (p,hx⁻¹*q*hx)
+  | .m12,(p,q) => (p,hy*q*hy⁻¹)
+  | .m13,(p,q) => (p,hy⁻¹*q*hy)
+
+def hRun : List Move → HState → HState
+  | [],s => s
+  | m::ms,s => hRun ms (hStep m s)
+
+theorem mapState_step (m : Move) (s : Verify.AtomicSemantics.GroupState) :
+    mapState (Verify.AtomicSemantics.groupStep m s)=hStep m (mapState s) := by
+  rcases s with ⟨p,q⟩
+  cases m <;> apply Prod.ext <;>
+    simp [mapState,Verify.AtomicSemantics.groupStep,hStep,Verify.X,Verify.Y]
+
+theorem mapState_run (ms : List Move) (s : Verify.AtomicSemantics.GroupState) :
+    mapState (Verify.AtomicSemantics.groupRun ms s)=hRun ms (mapState s) := by
+  induction ms generalizing s with
+  | nil => rfl
+  | cons m ms ih =>
+    simpa only [Verify.AtomicSemantics.groupRun,hRun,mapState_step] using
+      ih (Verify.AtomicSemantics.groupStep m s)
+
+theorem mapState_wordRun (ms : List Move) (w : Verify.AtomicSemantics.WordState) :
+    mapState (Verify.AtomicSemantics.evalState (Verify.AtomicSemantics.wordRun ms w))=
+      hRun ms (mapState (Verify.AtomicSemantics.evalState w)) := by
+  rw [Verify.AtomicSemantics.eval_wordRun,mapState_run]
+
+def initial (n : ℕ) : HState :=
+  (⟨0,-1,-(n:ℚ),(n:ℚ)⟩,⟨1,-(n:ℚ),-(n:ℚ),0⟩)
+
+def target : HState := (hx,hy)
+
+theorem mapState_initial (n : ℕ) :
+    mapState (Verify.ROperationConnection.initial n)=initial n := by
+  apply Prod.ext
+  · exact toH_uFamily n
+  · exact toH_vFamily n
+
+theorem mapState_initialWords (n : ℕ) :
+    mapState (Verify.AtomicSemantics.evalState (Verify.AtomicSemantics.initialWords n))=initial n := by
+  rw [Verify.AtomicSemantics.eval_initialWords,mapState_initial]
+
+theorem mapState_target : mapState (Verify.x,Verify.y)=target := by
+  simp [mapState,target]
+
+theorem success_image_target (ms : List Move) (n : ℕ)
+    (hs : Verify.AtomicSemantics.groupRun ms (Verify.ROperationConnection.initial n)=
+      (Verify.x,Verify.y)) : hRun ms (initial n)=target := by
+  rw [← mapState_initial,← mapState_run,hs,mapState_target]
+
+theorem success_coordinates (ms : List Move) (n : ℕ)
+    (hs : Verify.AtomicSemantics.groupRun ms (Verify.ROperationConnection.initial n)=
+      (Verify.x,Verify.y)) :
+    (hRun ms (initial n)).1.a=1 ∧ (hRun ms (initial n)).1.b=0 ∧
+    (hRun ms (initial n)).1.c=0 ∧ (hRun ms (initial n)).1.d=0 ∧
+    (hRun ms (initial n)).2.a=0 ∧ (hRun ms (initial n)).2.b=1 ∧
+    (hRun ms (initial n)).2.c=0 ∧ (hRun ms (initial n)).2.d=0 := by
+  rw [success_image_target ms n hs]
+  simp [target,hx,hy]
+
+theorem success_fourth_zero (ms : List Move) (n : ℕ)
+    (hs : Verify.AtomicSemantics.groupRun ms (Verify.ROperationConnection.initial n)=
+      (Verify.x,Verify.y)) :
+    (hRun ms (initial n)).1.d=0 ∧ (hRun ms (initial n)).2.d=0 := by
+  rw [success_image_target ms n hs]
+  exact ⟨rfl,rfl⟩
+
+/-- A direct obstruction, requiring no external coefficient-identification. -/
+theorem nonarrival_of_fourth_nonzero (ms : List Move) (n : ℕ)
+    (hd : (hRun ms (initial n)).1.d≠0 ∨ (hRun ms (initial n)).2.d≠0) :
+    Verify.AtomicSemantics.groupRun ms (Verify.ROperationConnection.initial n)≠
+      (Verify.x,Verify.y) := by
+  intro hs
+  obtain ⟨h1,h2⟩ := success_fourth_zero ms n hs
+  rcases hd with hd|hd
+  · exact hd h1
+  · exact hd h2
+
+theorem hRun_append (xs ys : List Move) (s : HState) :
+    hRun (xs++ys) s=hRun ys (hRun xs s) := by
+  induction xs generalizing s with
+  | nil => rfl
+  | cons x xs ih => exact ih (hStep x s)
+
+theorem hRun_two (t : ℕ) (p q : H) :
+    hRun (List.replicate t .m2) (p,q)=(p*q^t,q) := by
+  induction t generalizing p with
+  | zero => simp [hRun]
+  | succ t ih =>
+    simp only [List.replicate_succ,hRun,hStep,ih,pow_succ',mul_assoc]
+
+theorem hRun_five (t : ℕ) (p q : H) :
+    hRun (List.replicate t .m5) (p,q)=(p,q*(p⁻¹)^t) := by
+  induction t generalizing q with
+  | zero => simp [hRun]
+  | succ t ih =>
+    simp only [List.replicate_succ,hRun,hStep,ih,pow_succ',mul_assoc]
+
+theorem hRun_two_a_zero (t : ℕ) (p q : H) (hq : q.a=0) :
+    hRun (List.replicate t .m2) (p,q)=
+      (⟨p.a,p.b+(t:ℚ)*q.b,p.c+(t:ℚ)*q.c+p.a*(t:ℚ)*q.b,
+        p.d+(t:ℚ)*q.d+p.a*(t:ℚ)*q.c+p.a*(p.a-1)*(t:ℚ)*q.b/2⟩,q) := by
+  rw [hRun_two,pow_a_zero q hq]
+  apply Prod.ext
+  · apply H.ext <;> simp <;> ring
+  · rfl
+
+theorem hRun_five_a_zero (t : ℕ) (p q : H) (hp : p.a=0) :
+    hRun (List.replicate t .m5) (p,q)=
+      (p,⟨q.a,q.b-(t:ℚ)*p.b,q.c-(t:ℚ)*p.c-q.a*(t:ℚ)*p.b,
+        q.d-(t:ℚ)*p.d-q.a*(t:ℚ)*p.c-q.a*(q.a-1)*(t:ℚ)*p.b/2⟩) := by
+  have hi : p⁻¹.a=0 := by simp [hp]
+  rw [hRun_five,pow_a_zero p⁻¹ hi]
+  apply Prod.ext
+  · rfl
+  · apply H.ext <;> simp [hp] <;> ring
+
+end Candidate.AABDynamics

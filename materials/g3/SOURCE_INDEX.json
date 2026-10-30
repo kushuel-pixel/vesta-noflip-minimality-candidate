@@ -1,0 +1,324 @@
+{
+  "fixed_commit": "615aba2bcda3830fb6cb1cd542a26858318bfb12",
+  "fixed_tree": "c8dd18835fe4849e11cab08f9c493585f214821f",
+  "sources": [
+    {
+      "module": "Verify.Basic",
+      "path": "lean/Verify/Basic.lean",
+      "pin": {
+        "bytes": 520,
+        "sha256": "7ddce46c249ad3118de2f90274df6bc5206741543497c0e9b9274ff27ca474aa",
+        "crc32": "0d51e485"
+      }
+    },
+    {
+      "module": "Verify.ResearchWords",
+      "path": "lean/Verify/ResearchWords.lean",
+      "pin": {
+        "bytes": 4565,
+        "sha256": "a9f87c39bae3c0dabde9cae59657f59d0a78fb59be1fc72dbb5ed51b15e90e09",
+        "crc32": "7e6936cf"
+      }
+    },
+    {
+      "module": "Verify.ReducedWords",
+      "path": "lean/Verify/ReducedWords.lean",
+      "pin": {
+        "bytes": 5477,
+        "sha256": "122dcdc33930d91055788723003001437be52e3fe7c34e702bb26ae33a9ec763",
+        "crc32": "7bd9bdbe"
+      }
+    },
+    {
+      "module": "Verify.ReducedC",
+      "path": "lean/Verify/ReducedC.lean",
+      "pin": {
+        "bytes": 4007,
+        "sha256": "2a1888ac1fa5f3c9d4d67541307cd4682d7b16cb041634399b43c0a561e77977",
+        "crc32": "8aa37a55"
+      }
+    },
+    {
+      "module": "Verify.CRightCancellation",
+      "path": "lean/Verify/CRightCancellation.lean",
+      "pin": {
+        "bytes": 3987,
+        "sha256": "ed89743f7f5052d0c20dc73235022e20c2d967d3e906cce38919467a7e5d46db",
+        "crc32": "a51ebe75"
+      }
+    },
+    {
+      "module": "Verify.RCoreObstruction",
+      "path": "lean/Verify/RCoreObstruction.lean",
+      "pin": {
+        "bytes": 2958,
+        "sha256": "0da038a7c2c9f8afd0b90c7e608974490a7be072d6e5fa8bd442bde4c0e6b0e1",
+        "crc32": "21b89441"
+      }
+    },
+    {
+      "module": "Verify.ROperationConnection",
+      "path": "lean/Verify/ROperationConnection.lean",
+      "pin": {
+        "bytes": 6511,
+        "sha256": "503d1c44f911edc9196a1f9e5b83172b43bf4f0ce1e24dfee8e4fdfd1f252e71",
+        "crc32": "40aebf82"
+      }
+    },
+    {
+      "module": "Verify.AtomicSemantics",
+      "path": "lean/Verify/AtomicSemantics.lean",
+      "pin": {
+        "bytes": 9607,
+        "sha256": "032837b5f68997f1b2428b7310978577bfd031747ace811ca2949f5332879ee3",
+        "crc32": "b7706487"
+      }
+    },
+    {
+      "module": "ShortWordDelete",
+      "path": "lean/ShortWordDelete.lean",
+      "pin": {
+        "bytes": 15933,
+        "sha256": "835f98ac0fc64ff2c2f5d8d6838f0be13faa9dd62fdab281aa60b6428e972ccd",
+        "crc32": "7316ad68"
+      }
+    },
+    {
+      "module": "ShortWordRecovery",
+      "path": "lean/ShortWordRecovery.lean",
+      "pin": {
+        "bytes": 8752,
+        "sha256": "641322170c0843c81a9dc855cef96e2501809a234d6195cd47dab899a02c9cf6",
+        "crc32": "cd141463"
+      }
+    },
+    {
+      "module": "ShortWordMatrix",
+      "path": "lean/ShortWordMatrix.lean",
+      "pin": {
+        "bytes": 4404,
+        "sha256": "4094ebc1fa3c83cfd0592c781859b9b8c7a537b49419e9b19fc1e56a46efddd3",
+        "crc32": "6178c1f0"
+      }
+    },
+    {
+      "module": "ShortWordNormalForm",
+      "path": "lean/ShortWordNormalForm.lean",
+      "pin": {
+        "bytes": 8026,
+        "sha256": "e106f87a431a210270194329db97178057063c03c6760cf6b7c23fd7b2413c4c",
+        "crc32": "0fb8feed"
+      }
+    },
+    {
+      "module": "ShortWordNormalize",
+      "path": "lean/ShortWordNormalize.lean",
+      "pin": {
+        "bytes": 3662,
+        "sha256": "9f3944940e89ed1ea7fdbdf88115c869185a46d75e2e75d86d12efdf3285d697",
+        "crc32": "0bfa0ab4"
+      }
+    },
+    {
+      "module": "ShortWordCounts",
+      "path": "lean/ShortWordCounts.lean",
+      "pin": {
+        "bytes": 3513,
+        "sha256": "20ec8817963f231f6763dec1e4ec96cebbd1b2fc413a95da29e3dc5431441a62",
+        "crc32": "643ed2ef"
+      }
+    },
+    {
+      "module": "ShortWordMarkAccounting",
+      "path": "lean/ShortWordMarkAccounting.lean",
+      "pin": {
+        "bytes": 4846,
+        "sha256": "a2113ed37e2dff4a98e8e386deab802ecb1323f1cbb6903838a3525ebd9eb914",
+        "crc32": "988ea9eb"
+      }
+    },
+    {
+      "module": "ShortWordTerminalDelete",
+      "path": "lean/ShortWordTerminalDelete.lean",
+      "pin": {
+        "bytes": 11048,
+        "sha256": "c2a4d3cfec577c61284d2942b8144b5b07e58f09a14f840b420714f3e707acbb",
+        "crc32": "69fbbe01"
+      }
+    },
+    {
+      "module": "ShortWordSelection",
+      "path": "lean/ShortWordSelection.lean",
+      "pin": {
+        "bytes": 3663,
+        "sha256": "e90423fb3bd71ccbc2687fac54fbacbc2810f2a9a90b847d3512aaa3dbea3526",
+        "crc32": "774237b4"
+      }
+    },
+    {
+      "module": "ShortWordLineage",
+      "path": "lean/ShortWordLineage.lean",
+      "pin": {
+        "bytes": 5503,
+        "sha256": "92e029f0dea172c4185ca429c5ef7e32082c58adecb722e7c9d607cec06c4ac0",
+        "crc32": "11cf77bb"
+      }
+    },
+    {
+      "module": "ShortWordAdjacency",
+      "path": "lean/ShortWordAdjacency.lean",
+      "pin": {
+        "bytes": 5439,
+        "sha256": "1aaec38b5ef0b2d16c3ea23df9da5ab2b5b6769281c26777e39d3a8dc389a71c",
+        "crc32": "4c7a742c"
+      }
+    },
+    {
+      "module": "ShortWordOverlap",
+      "path": "lean/ShortWordOverlap.lean",
+      "pin": {
+        "bytes": 10192,
+        "sha256": "608f18fdfd213b39c8e108f7336784b23465acbc6876f9228e5a51f847051202",
+        "crc32": "3edfa7a2"
+      }
+    },
+    {
+      "module": "ShortWordNoZ",
+      "path": "lean/ShortWordNoZ.lean",
+      "pin": {
+        "bytes": 8743,
+        "sha256": "39d32892a33fda2391591b2a911da83ab1049479a56b475ec959cf0722c0c6ff",
+        "crc32": "f0586604"
+      }
+    },
+    {
+      "module": "ShortWordMarkBound",
+      "path": "lean/ShortWordMarkBound.lean",
+      "pin": {
+        "bytes": 6249,
+        "sha256": "37cda55c0537eb1bccbae371c8b841474b23808686ca3d5e033a097033db62d5",
+        "crc32": "e83f676b"
+      }
+    },
+    {
+      "module": "Verify.QGroup",
+      "path": "lean/Verify/QGroup.lean",
+      "pin": {
+        "bytes": 9358,
+        "sha256": "e38bdfd82c9252b827451e5f0ceb1db8e843527c0c7104e3c3ef828995291de9",
+        "crc32": "5fbbb5d8"
+      }
+    },
+    {
+      "module": "ShortWordSuccessBridge",
+      "path": "lean/ShortWordSuccessBridge.lean",
+      "pin": {
+        "bytes": 7032,
+        "sha256": "f099ae276ba61c5a50c6f276333c7d442b3bd76e6fa5a3a58682e78e396054aa",
+        "crc32": "2d817530"
+      }
+    },
+    {
+      "module": "RawDeletionCriterion",
+      "path": "lean/RawDeletionCriterion.lean",
+      "pin": {
+        "bytes": 2814,
+        "sha256": "710d8d3bfb7de8847c970cd4f0d4be3ecf93f9d8a7a8f3751557e228c3f0e3de",
+        "crc32": "d91f962a"
+      }
+    },
+    {
+      "module": "CutTransport",
+      "path": "lean/CutTransport.lean",
+      "pin": {
+        "bytes": 4611,
+        "sha256": "6686bc4247cfa1766aa030b1689c10405e83895138670c2fc4a966c5f4f0e8fd",
+        "crc32": "ea225274"
+      }
+    },
+    {
+      "module": "CompatibleSelection",
+      "path": "lean/CompatibleSelection.lean",
+      "pin": {
+        "bytes": 4455,
+        "sha256": "443de4d61fb890bf2a701ed2bc068b93b6db76fdb54a9630136563687de708d1",
+        "crc32": "2acaccb9"
+      }
+    },
+    {
+      "module": "ShortBudget",
+      "path": "lean/ShortBudget.lean",
+      "pin": {
+        "bytes": 4540,
+        "sha256": "0495eed0f5b177394fdef44314c23f663cc0c7f9e94820c7edde2e6e35fcc9fc",
+        "crc32": "96798cc2"
+      }
+    },
+    {
+      "module": "FiniteCut",
+      "path": "lean/FiniteCut.lean",
+      "pin": {
+        "bytes": 1637,
+        "sha256": "ab28f25218c6a8f9a8ff47f110517e290ad12723ceef49031fb28ed05159c3d3",
+        "crc32": "7d9c4378"
+      }
+    },
+    {
+      "module": "BadCleanCounterexample",
+      "path": "lean/BadCleanCounterexample.lean",
+      "pin": {
+        "bytes": 150607,
+        "sha256": "ac34c3490cc88c74a5681780aaecb91e4ef3b2d1348f101aac84ff3cd1682eb5",
+        "crc32": "ab3b1011"
+      }
+    },
+    {
+      "module": "BoundScope",
+      "path": "lean/BoundScope.lean",
+      "pin": {
+        "bytes": 2644,
+        "sha256": "27cdc0f13204a69cc45952191242027089589d8bf9d79ceb45baaaefe920d4cc",
+        "crc32": "4867de8a"
+      }
+    },
+    {
+      "module": "ShortTraceDepth",
+      "path": "lean/ShortTraceDepth.lean",
+      "pin": {
+        "bytes": 1488,
+        "sha256": "8fdadf595df53fa43c840f920977b365666cd34008855669e69c7273342bddcd",
+        "crc32": "3d66d3fe"
+      }
+    },
+    {
+      "module": "NegativeNielsenCount",
+      "path": "lean/NegativeNielsenCount.lean",
+      "pin": {
+        "bytes": 10507,
+        "sha256": "e46681d3126b854f96453901dc6733551da06469a27c6fcd770860038a85e7c3",
+        "crc32": "6ead7f87"
+      }
+    },
+    {
+      "module": "Verify.QDynamics",
+      "path": "lean/Verify/QDynamics.lean",
+      "pin": {
+        "bytes": 11674,
+        "sha256": "a8f8f1180018099be0ab97053953d3963a58567f5d54157720a46111fac7232d",
+        "crc32": "8a121b34"
+      }
+    },
+    {
+      "module": "FullQEntry",
+      "path": "lean/FullQEntry.lean",
+      "pin": {
+        "bytes": 6823,
+        "sha256": "21dff18368bdee872751a2029ec00e9ea0b6b76b556887516b5f13b7edec38d8",
+        "crc32": "fac548b1"
+      }
+    }
+  ],
+  "purpose": "Read original named propositions, premises, definitions and local import source. No compilation requested. No reviewer verdicts included here.",
+  "formalization_boundary": "F-T1/F-0 plus saved upper-bound source; not the C25/distance composition as one Lean theorem.",
+  "external_runtime_packages": "compiler/kernel, Mathlib/external caches, complete repository/Lake root are not supplied as an executable environment."
+}

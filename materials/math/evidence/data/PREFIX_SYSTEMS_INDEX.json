@@ -1,0 +1,19 @@
+{
+  "meaning": "The original 128 systems are the exact concatenation of the two referenced lists",
+  "system_count": 128,
+  "parts": [
+    {
+      "lambda": 0,
+      "file": "K1_SYSTEMS.json",
+      "field": "root list",
+      "count": 64
+    },
+    {
+      "lambda": 1,
+      "file": "K7_SYSTEMS.json",
+      "field": "systems",
+      "count": 64
+    }
+  ],
+  "all_coefficients_retained_in_targets": true
+}

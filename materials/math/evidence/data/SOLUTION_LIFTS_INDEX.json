@@ -1,0 +1,2945 @@
+{
+  "meaning": "The 588 original lift records are exactly the original_lift field of each referenced raw lift file",
+  "lifts": [
+    {
+      "lift_id": 0,
+      "file": "k7_raw_lifts/lift_000.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 1,
+      "file": "k7_raw_lifts/lift_001.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 2,
+      "file": "k7_raw_lifts/lift_002.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 3,
+      "file": "k7_raw_lifts/lift_003.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 4,
+      "file": "k7_raw_lifts/lift_004.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 5,
+      "file": "k7_raw_lifts/lift_005.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 6,
+      "file": "k7_raw_lifts/lift_006.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 7,
+      "file": "k7_raw_lifts/lift_007.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 8,
+      "file": "k7_raw_lifts/lift_008.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 9,
+      "file": "k7_raw_lifts/lift_009.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 10,
+      "file": "k7_raw_lifts/lift_010.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 11,
+      "file": "k7_raw_lifts/lift_011.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 12,
+      "file": "k7_raw_lifts/lift_012.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 13,
+      "file": "k7_raw_lifts/lift_013.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 14,
+      "file": "k7_raw_lifts/lift_014.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 15,
+      "file": "k7_raw_lifts/lift_015.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 16,
+      "file": "k7_raw_lifts/lift_016.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 17,
+      "file": "k7_raw_lifts/lift_017.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 18,
+      "file": "k7_raw_lifts/lift_018.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 19,
+      "file": "k7_raw_lifts/lift_019.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 20,
+      "file": "k7_raw_lifts/lift_020.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 21,
+      "file": "k7_raw_lifts/lift_021.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 22,
+      "file": "k7_raw_lifts/lift_022.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 23,
+      "file": "k7_raw_lifts/lift_023.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 24,
+      "file": "k7_raw_lifts/lift_024.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 25,
+      "file": "k7_raw_lifts/lift_025.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 26,
+      "file": "k7_raw_lifts/lift_026.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 27,
+      "file": "k7_raw_lifts/lift_027.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 28,
+      "file": "k7_raw_lifts/lift_028.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 29,
+      "file": "k7_raw_lifts/lift_029.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 30,
+      "file": "k7_raw_lifts/lift_030.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 31,
+      "file": "k7_raw_lifts/lift_031.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 32,
+      "file": "k7_raw_lifts/lift_032.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 33,
+      "file": "k7_raw_lifts/lift_033.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 34,
+      "file": "k7_raw_lifts/lift_034.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 35,
+      "file": "k7_raw_lifts/lift_035.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 36,
+      "file": "k7_raw_lifts/lift_036.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 37,
+      "file": "k7_raw_lifts/lift_037.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 38,
+      "file": "k7_raw_lifts/lift_038.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 39,
+      "file": "k7_raw_lifts/lift_039.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 40,
+      "file": "k7_raw_lifts/lift_040.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 41,
+      "file": "k7_raw_lifts/lift_041.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 42,
+      "file": "k7_raw_lifts/lift_042.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 43,
+      "file": "k7_raw_lifts/lift_043.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 44,
+      "file": "k7_raw_lifts/lift_044.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 45,
+      "file": "k7_raw_lifts/lift_045.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 46,
+      "file": "k7_raw_lifts/lift_046.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 47,
+      "file": "k7_raw_lifts/lift_047.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 48,
+      "file": "k7_raw_lifts/lift_048.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 49,
+      "file": "k7_raw_lifts/lift_049.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 50,
+      "file": "k7_raw_lifts/lift_050.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 51,
+      "file": "k7_raw_lifts/lift_051.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 52,
+      "file": "k7_raw_lifts/lift_052.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 53,
+      "file": "k7_raw_lifts/lift_053.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 54,
+      "file": "k7_raw_lifts/lift_054.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 55,
+      "file": "k7_raw_lifts/lift_055.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 56,
+      "file": "k7_raw_lifts/lift_056.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 57,
+      "file": "k7_raw_lifts/lift_057.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 58,
+      "file": "k7_raw_lifts/lift_058.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 59,
+      "file": "k7_raw_lifts/lift_059.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 60,
+      "file": "k7_raw_lifts/lift_060.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 61,
+      "file": "k7_raw_lifts/lift_061.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 62,
+      "file": "k7_raw_lifts/lift_062.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 63,
+      "file": "k7_raw_lifts/lift_063.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 64,
+      "file": "k7_raw_lifts/lift_064.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 65,
+      "file": "k7_raw_lifts/lift_065.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 66,
+      "file": "k7_raw_lifts/lift_066.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 67,
+      "file": "k7_raw_lifts/lift_067.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 68,
+      "file": "k7_raw_lifts/lift_068.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 69,
+      "file": "k7_raw_lifts/lift_069.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 70,
+      "file": "k7_raw_lifts/lift_070.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 71,
+      "file": "k7_raw_lifts/lift_071.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 72,
+      "file": "k7_raw_lifts/lift_072.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 73,
+      "file": "k7_raw_lifts/lift_073.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 74,
+      "file": "k7_raw_lifts/lift_074.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 75,
+      "file": "k7_raw_lifts/lift_075.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 76,
+      "file": "k7_raw_lifts/lift_076.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 77,
+      "file": "k7_raw_lifts/lift_077.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 78,
+      "file": "k7_raw_lifts/lift_078.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 79,
+      "file": "k7_raw_lifts/lift_079.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 80,
+      "file": "k7_raw_lifts/lift_080.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 81,
+      "file": "k7_raw_lifts/lift_081.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 82,
+      "file": "k7_raw_lifts/lift_082.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 83,
+      "file": "k7_raw_lifts/lift_083.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 84,
+      "file": "k7_raw_lifts/lift_084.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 85,
+      "file": "k7_raw_lifts/lift_085.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 86,
+      "file": "k7_raw_lifts/lift_086.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 87,
+      "file": "k7_raw_lifts/lift_087.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 88,
+      "file": "k7_raw_lifts/lift_088.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 89,
+      "file": "k7_raw_lifts/lift_089.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 90,
+      "file": "k7_raw_lifts/lift_090.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 91,
+      "file": "k7_raw_lifts/lift_091.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 92,
+      "file": "k7_raw_lifts/lift_092.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 93,
+      "file": "k7_raw_lifts/lift_093.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 94,
+      "file": "k7_raw_lifts/lift_094.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 95,
+      "file": "k7_raw_lifts/lift_095.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 96,
+      "file": "k7_raw_lifts/lift_096.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 97,
+      "file": "k7_raw_lifts/lift_097.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 98,
+      "file": "k7_raw_lifts/lift_098.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 99,
+      "file": "k7_raw_lifts/lift_099.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 100,
+      "file": "k7_raw_lifts/lift_100.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 101,
+      "file": "k7_raw_lifts/lift_101.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 102,
+      "file": "k7_raw_lifts/lift_102.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 103,
+      "file": "k7_raw_lifts/lift_103.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 104,
+      "file": "k7_raw_lifts/lift_104.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 105,
+      "file": "k7_raw_lifts/lift_105.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 106,
+      "file": "k7_raw_lifts/lift_106.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 107,
+      "file": "k7_raw_lifts/lift_107.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 108,
+      "file": "k7_raw_lifts/lift_108.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 109,
+      "file": "k7_raw_lifts/lift_109.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 110,
+      "file": "k7_raw_lifts/lift_110.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 111,
+      "file": "k7_raw_lifts/lift_111.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 112,
+      "file": "k7_raw_lifts/lift_112.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 113,
+      "file": "k7_raw_lifts/lift_113.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 114,
+      "file": "k7_raw_lifts/lift_114.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 115,
+      "file": "k7_raw_lifts/lift_115.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 116,
+      "file": "k7_raw_lifts/lift_116.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 117,
+      "file": "k7_raw_lifts/lift_117.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 118,
+      "file": "k7_raw_lifts/lift_118.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 119,
+      "file": "k7_raw_lifts/lift_119.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 120,
+      "file": "k7_raw_lifts/lift_120.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 121,
+      "file": "k7_raw_lifts/lift_121.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 122,
+      "file": "k7_raw_lifts/lift_122.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 123,
+      "file": "k7_raw_lifts/lift_123.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 124,
+      "file": "k7_raw_lifts/lift_124.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 125,
+      "file": "k7_raw_lifts/lift_125.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 126,
+      "file": "k7_raw_lifts/lift_126.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 127,
+      "file": "k7_raw_lifts/lift_127.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 128,
+      "file": "k7_raw_lifts/lift_128.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 129,
+      "file": "k7_raw_lifts/lift_129.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 130,
+      "file": "k7_raw_lifts/lift_130.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 131,
+      "file": "k7_raw_lifts/lift_131.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 132,
+      "file": "k7_raw_lifts/lift_132.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 133,
+      "file": "k7_raw_lifts/lift_133.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 134,
+      "file": "k7_raw_lifts/lift_134.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 135,
+      "file": "k7_raw_lifts/lift_135.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 136,
+      "file": "k7_raw_lifts/lift_136.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 137,
+      "file": "k7_raw_lifts/lift_137.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 138,
+      "file": "k7_raw_lifts/lift_138.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 139,
+      "file": "k7_raw_lifts/lift_139.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 140,
+      "file": "k7_raw_lifts/lift_140.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 141,
+      "file": "k7_raw_lifts/lift_141.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 142,
+      "file": "k7_raw_lifts/lift_142.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 143,
+      "file": "k7_raw_lifts/lift_143.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 144,
+      "file": "k7_raw_lifts/lift_144.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 145,
+      "file": "k7_raw_lifts/lift_145.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 146,
+      "file": "k7_raw_lifts/lift_146.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 147,
+      "file": "k7_raw_lifts/lift_147.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 148,
+      "file": "k7_raw_lifts/lift_148.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 149,
+      "file": "k7_raw_lifts/lift_149.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 150,
+      "file": "k7_raw_lifts/lift_150.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 151,
+      "file": "k7_raw_lifts/lift_151.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 152,
+      "file": "k7_raw_lifts/lift_152.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 153,
+      "file": "k7_raw_lifts/lift_153.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 154,
+      "file": "k7_raw_lifts/lift_154.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 155,
+      "file": "k7_raw_lifts/lift_155.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 156,
+      "file": "k7_raw_lifts/lift_156.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 157,
+      "file": "k7_raw_lifts/lift_157.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 158,
+      "file": "k7_raw_lifts/lift_158.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 159,
+      "file": "k7_raw_lifts/lift_159.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 160,
+      "file": "k7_raw_lifts/lift_160.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 161,
+      "file": "k7_raw_lifts/lift_161.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 162,
+      "file": "k7_raw_lifts/lift_162.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 163,
+      "file": "k7_raw_lifts/lift_163.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 164,
+      "file": "k7_raw_lifts/lift_164.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 165,
+      "file": "k7_raw_lifts/lift_165.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 166,
+      "file": "k7_raw_lifts/lift_166.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 167,
+      "file": "k7_raw_lifts/lift_167.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 168,
+      "file": "k7_raw_lifts/lift_168.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 169,
+      "file": "k7_raw_lifts/lift_169.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 170,
+      "file": "k7_raw_lifts/lift_170.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 171,
+      "file": "k7_raw_lifts/lift_171.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 172,
+      "file": "k7_raw_lifts/lift_172.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 173,
+      "file": "k7_raw_lifts/lift_173.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 174,
+      "file": "k7_raw_lifts/lift_174.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 175,
+      "file": "k7_raw_lifts/lift_175.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 176,
+      "file": "k7_raw_lifts/lift_176.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 177,
+      "file": "k7_raw_lifts/lift_177.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 178,
+      "file": "k7_raw_lifts/lift_178.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 179,
+      "file": "k7_raw_lifts/lift_179.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 180,
+      "file": "k7_raw_lifts/lift_180.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 181,
+      "file": "k7_raw_lifts/lift_181.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 182,
+      "file": "k7_raw_lifts/lift_182.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 183,
+      "file": "k7_raw_lifts/lift_183.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 184,
+      "file": "k7_raw_lifts/lift_184.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 185,
+      "file": "k7_raw_lifts/lift_185.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 186,
+      "file": "k7_raw_lifts/lift_186.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 187,
+      "file": "k7_raw_lifts/lift_187.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 188,
+      "file": "k7_raw_lifts/lift_188.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 189,
+      "file": "k7_raw_lifts/lift_189.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 190,
+      "file": "k7_raw_lifts/lift_190.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 191,
+      "file": "k7_raw_lifts/lift_191.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 192,
+      "file": "k7_raw_lifts/lift_192.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 193,
+      "file": "k7_raw_lifts/lift_193.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 194,
+      "file": "k7_raw_lifts/lift_194.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 195,
+      "file": "k7_raw_lifts/lift_195.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 196,
+      "file": "k7_raw_lifts/lift_196.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 197,
+      "file": "k7_raw_lifts/lift_197.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 198,
+      "file": "k7_raw_lifts/lift_198.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 199,
+      "file": "k7_raw_lifts/lift_199.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 200,
+      "file": "k7_raw_lifts/lift_200.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 201,
+      "file": "k7_raw_lifts/lift_201.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 202,
+      "file": "k7_raw_lifts/lift_202.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 203,
+      "file": "k7_raw_lifts/lift_203.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 204,
+      "file": "k7_raw_lifts/lift_204.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 205,
+      "file": "k7_raw_lifts/lift_205.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 206,
+      "file": "k7_raw_lifts/lift_206.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 207,
+      "file": "k7_raw_lifts/lift_207.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 208,
+      "file": "k7_raw_lifts/lift_208.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 209,
+      "file": "k7_raw_lifts/lift_209.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 210,
+      "file": "k7_raw_lifts/lift_210.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 211,
+      "file": "k7_raw_lifts/lift_211.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 212,
+      "file": "k7_raw_lifts/lift_212.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 213,
+      "file": "k7_raw_lifts/lift_213.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 214,
+      "file": "k7_raw_lifts/lift_214.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 215,
+      "file": "k7_raw_lifts/lift_215.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 216,
+      "file": "k7_raw_lifts/lift_216.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 217,
+      "file": "k7_raw_lifts/lift_217.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 218,
+      "file": "k7_raw_lifts/lift_218.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 219,
+      "file": "k7_raw_lifts/lift_219.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 220,
+      "file": "k7_raw_lifts/lift_220.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 221,
+      "file": "k7_raw_lifts/lift_221.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 222,
+      "file": "k7_raw_lifts/lift_222.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 223,
+      "file": "k7_raw_lifts/lift_223.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 224,
+      "file": "k7_raw_lifts/lift_224.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 225,
+      "file": "k7_raw_lifts/lift_225.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 226,
+      "file": "k7_raw_lifts/lift_226.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 227,
+      "file": "k7_raw_lifts/lift_227.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 228,
+      "file": "k7_raw_lifts/lift_228.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 229,
+      "file": "k7_raw_lifts/lift_229.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 230,
+      "file": "k7_raw_lifts/lift_230.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 231,
+      "file": "k7_raw_lifts/lift_231.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 232,
+      "file": "k7_raw_lifts/lift_232.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 233,
+      "file": "k7_raw_lifts/lift_233.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 234,
+      "file": "k7_raw_lifts/lift_234.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 235,
+      "file": "k7_raw_lifts/lift_235.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 236,
+      "file": "k7_raw_lifts/lift_236.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 237,
+      "file": "k7_raw_lifts/lift_237.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 238,
+      "file": "k7_raw_lifts/lift_238.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 239,
+      "file": "k7_raw_lifts/lift_239.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 240,
+      "file": "k7_raw_lifts/lift_240.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 241,
+      "file": "k7_raw_lifts/lift_241.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 242,
+      "file": "k7_raw_lifts/lift_242.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 243,
+      "file": "k7_raw_lifts/lift_243.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 244,
+      "file": "k7_raw_lifts/lift_244.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 245,
+      "file": "k7_raw_lifts/lift_245.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 246,
+      "file": "k7_raw_lifts/lift_246.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 247,
+      "file": "k7_raw_lifts/lift_247.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 248,
+      "file": "k7_raw_lifts/lift_248.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 249,
+      "file": "k7_raw_lifts/lift_249.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 250,
+      "file": "k7_raw_lifts/lift_250.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 251,
+      "file": "k7_raw_lifts/lift_251.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 252,
+      "file": "k7_raw_lifts/lift_252.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 253,
+      "file": "k7_raw_lifts/lift_253.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 254,
+      "file": "k7_raw_lifts/lift_254.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 255,
+      "file": "k7_raw_lifts/lift_255.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 256,
+      "file": "k7_raw_lifts/lift_256.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 257,
+      "file": "k7_raw_lifts/lift_257.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 258,
+      "file": "k7_raw_lifts/lift_258.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 259,
+      "file": "k7_raw_lifts/lift_259.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 260,
+      "file": "k7_raw_lifts/lift_260.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 261,
+      "file": "k7_raw_lifts/lift_261.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 262,
+      "file": "k7_raw_lifts/lift_262.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 263,
+      "file": "k7_raw_lifts/lift_263.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 264,
+      "file": "k7_raw_lifts/lift_264.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 265,
+      "file": "k7_raw_lifts/lift_265.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 266,
+      "file": "k7_raw_lifts/lift_266.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 267,
+      "file": "k7_raw_lifts/lift_267.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 268,
+      "file": "k7_raw_lifts/lift_268.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 269,
+      "file": "k7_raw_lifts/lift_269.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 270,
+      "file": "k7_raw_lifts/lift_270.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 271,
+      "file": "k7_raw_lifts/lift_271.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 272,
+      "file": "k7_raw_lifts/lift_272.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 273,
+      "file": "k7_raw_lifts/lift_273.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 274,
+      "file": "k7_raw_lifts/lift_274.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 275,
+      "file": "k7_raw_lifts/lift_275.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 276,
+      "file": "k7_raw_lifts/lift_276.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 277,
+      "file": "k7_raw_lifts/lift_277.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 278,
+      "file": "k7_raw_lifts/lift_278.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 279,
+      "file": "k7_raw_lifts/lift_279.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 280,
+      "file": "k7_raw_lifts/lift_280.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 281,
+      "file": "k7_raw_lifts/lift_281.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 282,
+      "file": "k7_raw_lifts/lift_282.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 283,
+      "file": "k7_raw_lifts/lift_283.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 284,
+      "file": "k7_raw_lifts/lift_284.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 285,
+      "file": "k7_raw_lifts/lift_285.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 286,
+      "file": "k7_raw_lifts/lift_286.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 287,
+      "file": "k7_raw_lifts/lift_287.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 288,
+      "file": "k7_raw_lifts/lift_288.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 289,
+      "file": "k7_raw_lifts/lift_289.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 290,
+      "file": "k7_raw_lifts/lift_290.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 291,
+      "file": "k7_raw_lifts/lift_291.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 292,
+      "file": "k7_raw_lifts/lift_292.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 293,
+      "file": "k7_raw_lifts/lift_293.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 294,
+      "file": "k7_raw_lifts/lift_294.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 295,
+      "file": "k7_raw_lifts/lift_295.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 296,
+      "file": "k7_raw_lifts/lift_296.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 297,
+      "file": "k7_raw_lifts/lift_297.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 298,
+      "file": "k7_raw_lifts/lift_298.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 299,
+      "file": "k7_raw_lifts/lift_299.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 300,
+      "file": "k7_raw_lifts/lift_300.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 301,
+      "file": "k7_raw_lifts/lift_301.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 302,
+      "file": "k7_raw_lifts/lift_302.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 303,
+      "file": "k7_raw_lifts/lift_303.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 304,
+      "file": "k7_raw_lifts/lift_304.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 305,
+      "file": "k7_raw_lifts/lift_305.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 306,
+      "file": "k7_raw_lifts/lift_306.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 307,
+      "file": "k7_raw_lifts/lift_307.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 308,
+      "file": "k7_raw_lifts/lift_308.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 309,
+      "file": "k7_raw_lifts/lift_309.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 310,
+      "file": "k7_raw_lifts/lift_310.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 311,
+      "file": "k7_raw_lifts/lift_311.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 312,
+      "file": "k7_raw_lifts/lift_312.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 313,
+      "file": "k7_raw_lifts/lift_313.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 314,
+      "file": "k7_raw_lifts/lift_314.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 315,
+      "file": "k7_raw_lifts/lift_315.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 316,
+      "file": "k7_raw_lifts/lift_316.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 317,
+      "file": "k7_raw_lifts/lift_317.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 318,
+      "file": "k7_raw_lifts/lift_318.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 319,
+      "file": "k7_raw_lifts/lift_319.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 320,
+      "file": "k7_raw_lifts/lift_320.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 321,
+      "file": "k7_raw_lifts/lift_321.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 322,
+      "file": "k7_raw_lifts/lift_322.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 323,
+      "file": "k7_raw_lifts/lift_323.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 324,
+      "file": "k7_raw_lifts/lift_324.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 325,
+      "file": "k7_raw_lifts/lift_325.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 326,
+      "file": "k7_raw_lifts/lift_326.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 327,
+      "file": "k7_raw_lifts/lift_327.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 328,
+      "file": "k7_raw_lifts/lift_328.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 329,
+      "file": "k7_raw_lifts/lift_329.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 330,
+      "file": "k7_raw_lifts/lift_330.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 331,
+      "file": "k7_raw_lifts/lift_331.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 332,
+      "file": "k7_raw_lifts/lift_332.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 333,
+      "file": "k7_raw_lifts/lift_333.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 334,
+      "file": "k7_raw_lifts/lift_334.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 335,
+      "file": "k7_raw_lifts/lift_335.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 336,
+      "file": "k7_raw_lifts/lift_336.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 337,
+      "file": "k7_raw_lifts/lift_337.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 338,
+      "file": "k7_raw_lifts/lift_338.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 339,
+      "file": "k7_raw_lifts/lift_339.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 340,
+      "file": "k7_raw_lifts/lift_340.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 341,
+      "file": "k7_raw_lifts/lift_341.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 342,
+      "file": "k7_raw_lifts/lift_342.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 343,
+      "file": "k7_raw_lifts/lift_343.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 344,
+      "file": "k7_raw_lifts/lift_344.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 345,
+      "file": "k7_raw_lifts/lift_345.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 346,
+      "file": "k7_raw_lifts/lift_346.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 347,
+      "file": "k7_raw_lifts/lift_347.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 348,
+      "file": "k7_raw_lifts/lift_348.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 349,
+      "file": "k7_raw_lifts/lift_349.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 350,
+      "file": "k7_raw_lifts/lift_350.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 351,
+      "file": "k7_raw_lifts/lift_351.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 352,
+      "file": "k7_raw_lifts/lift_352.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 353,
+      "file": "k7_raw_lifts/lift_353.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 354,
+      "file": "k7_raw_lifts/lift_354.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 355,
+      "file": "k7_raw_lifts/lift_355.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 356,
+      "file": "k7_raw_lifts/lift_356.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 357,
+      "file": "k7_raw_lifts/lift_357.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 358,
+      "file": "k7_raw_lifts/lift_358.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 359,
+      "file": "k7_raw_lifts/lift_359.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 360,
+      "file": "k7_raw_lifts/lift_360.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 361,
+      "file": "k7_raw_lifts/lift_361.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 362,
+      "file": "k7_raw_lifts/lift_362.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 363,
+      "file": "k7_raw_lifts/lift_363.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 364,
+      "file": "k7_raw_lifts/lift_364.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 365,
+      "file": "k7_raw_lifts/lift_365.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 366,
+      "file": "k7_raw_lifts/lift_366.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 367,
+      "file": "k7_raw_lifts/lift_367.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 368,
+      "file": "k7_raw_lifts/lift_368.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 369,
+      "file": "k7_raw_lifts/lift_369.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 370,
+      "file": "k7_raw_lifts/lift_370.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 371,
+      "file": "k7_raw_lifts/lift_371.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 372,
+      "file": "k7_raw_lifts/lift_372.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 373,
+      "file": "k7_raw_lifts/lift_373.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 374,
+      "file": "k7_raw_lifts/lift_374.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 375,
+      "file": "k7_raw_lifts/lift_375.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 376,
+      "file": "k7_raw_lifts/lift_376.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 377,
+      "file": "k7_raw_lifts/lift_377.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 378,
+      "file": "k7_raw_lifts/lift_378.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 379,
+      "file": "k7_raw_lifts/lift_379.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 380,
+      "file": "k7_raw_lifts/lift_380.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 381,
+      "file": "k7_raw_lifts/lift_381.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 382,
+      "file": "k7_raw_lifts/lift_382.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 383,
+      "file": "k7_raw_lifts/lift_383.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 384,
+      "file": "k7_raw_lifts/lift_384.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 385,
+      "file": "k7_raw_lifts/lift_385.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 386,
+      "file": "k7_raw_lifts/lift_386.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 387,
+      "file": "k7_raw_lifts/lift_387.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 388,
+      "file": "k7_raw_lifts/lift_388.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 389,
+      "file": "k7_raw_lifts/lift_389.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 390,
+      "file": "k7_raw_lifts/lift_390.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 391,
+      "file": "k7_raw_lifts/lift_391.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 392,
+      "file": "k7_raw_lifts/lift_392.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 393,
+      "file": "k7_raw_lifts/lift_393.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 394,
+      "file": "k7_raw_lifts/lift_394.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 395,
+      "file": "k7_raw_lifts/lift_395.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 396,
+      "file": "k7_raw_lifts/lift_396.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 397,
+      "file": "k7_raw_lifts/lift_397.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 398,
+      "file": "k7_raw_lifts/lift_398.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 399,
+      "file": "k7_raw_lifts/lift_399.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 400,
+      "file": "k7_raw_lifts/lift_400.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 401,
+      "file": "k7_raw_lifts/lift_401.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 402,
+      "file": "k7_raw_lifts/lift_402.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 403,
+      "file": "k7_raw_lifts/lift_403.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 404,
+      "file": "k7_raw_lifts/lift_404.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 405,
+      "file": "k7_raw_lifts/lift_405.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 406,
+      "file": "k7_raw_lifts/lift_406.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 407,
+      "file": "k7_raw_lifts/lift_407.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 408,
+      "file": "k7_raw_lifts/lift_408.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 409,
+      "file": "k7_raw_lifts/lift_409.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 410,
+      "file": "k7_raw_lifts/lift_410.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 411,
+      "file": "k7_raw_lifts/lift_411.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 412,
+      "file": "k7_raw_lifts/lift_412.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 413,
+      "file": "k7_raw_lifts/lift_413.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 414,
+      "file": "k7_raw_lifts/lift_414.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 415,
+      "file": "k7_raw_lifts/lift_415.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 416,
+      "file": "k7_raw_lifts/lift_416.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 417,
+      "file": "k7_raw_lifts/lift_417.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 418,
+      "file": "k7_raw_lifts/lift_418.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 419,
+      "file": "k7_raw_lifts/lift_419.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 420,
+      "file": "k7_raw_lifts/lift_420.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 421,
+      "file": "k7_raw_lifts/lift_421.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 422,
+      "file": "k7_raw_lifts/lift_422.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 423,
+      "file": "k7_raw_lifts/lift_423.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 424,
+      "file": "k7_raw_lifts/lift_424.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 425,
+      "file": "k7_raw_lifts/lift_425.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 426,
+      "file": "k7_raw_lifts/lift_426.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 427,
+      "file": "k7_raw_lifts/lift_427.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 428,
+      "file": "k7_raw_lifts/lift_428.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 429,
+      "file": "k7_raw_lifts/lift_429.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 430,
+      "file": "k7_raw_lifts/lift_430.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 431,
+      "file": "k7_raw_lifts/lift_431.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 432,
+      "file": "k7_raw_lifts/lift_432.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 433,
+      "file": "k7_raw_lifts/lift_433.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 434,
+      "file": "k7_raw_lifts/lift_434.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 435,
+      "file": "k7_raw_lifts/lift_435.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 436,
+      "file": "k7_raw_lifts/lift_436.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 437,
+      "file": "k7_raw_lifts/lift_437.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 438,
+      "file": "k7_raw_lifts/lift_438.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 439,
+      "file": "k7_raw_lifts/lift_439.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 440,
+      "file": "k7_raw_lifts/lift_440.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 441,
+      "file": "k7_raw_lifts/lift_441.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 442,
+      "file": "k7_raw_lifts/lift_442.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 443,
+      "file": "k7_raw_lifts/lift_443.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 444,
+      "file": "k7_raw_lifts/lift_444.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 445,
+      "file": "k7_raw_lifts/lift_445.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 446,
+      "file": "k7_raw_lifts/lift_446.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 447,
+      "file": "k7_raw_lifts/lift_447.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 448,
+      "file": "k7_raw_lifts/lift_448.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 449,
+      "file": "k7_raw_lifts/lift_449.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 450,
+      "file": "k7_raw_lifts/lift_450.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 451,
+      "file": "k7_raw_lifts/lift_451.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 452,
+      "file": "k7_raw_lifts/lift_452.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 453,
+      "file": "k7_raw_lifts/lift_453.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 454,
+      "file": "k7_raw_lifts/lift_454.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 455,
+      "file": "k7_raw_lifts/lift_455.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 456,
+      "file": "k7_raw_lifts/lift_456.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 457,
+      "file": "k7_raw_lifts/lift_457.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 458,
+      "file": "k7_raw_lifts/lift_458.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 459,
+      "file": "k7_raw_lifts/lift_459.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 460,
+      "file": "k7_raw_lifts/lift_460.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 461,
+      "file": "k7_raw_lifts/lift_461.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 462,
+      "file": "k7_raw_lifts/lift_462.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 463,
+      "file": "k7_raw_lifts/lift_463.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 464,
+      "file": "k7_raw_lifts/lift_464.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 465,
+      "file": "k7_raw_lifts/lift_465.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 466,
+      "file": "k7_raw_lifts/lift_466.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 467,
+      "file": "k7_raw_lifts/lift_467.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 468,
+      "file": "k7_raw_lifts/lift_468.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 469,
+      "file": "k7_raw_lifts/lift_469.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 470,
+      "file": "k7_raw_lifts/lift_470.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 471,
+      "file": "k7_raw_lifts/lift_471.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 472,
+      "file": "k7_raw_lifts/lift_472.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 473,
+      "file": "k7_raw_lifts/lift_473.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 474,
+      "file": "k7_raw_lifts/lift_474.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 475,
+      "file": "k7_raw_lifts/lift_475.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 476,
+      "file": "k7_raw_lifts/lift_476.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 477,
+      "file": "k7_raw_lifts/lift_477.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 478,
+      "file": "k7_raw_lifts/lift_478.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 479,
+      "file": "k7_raw_lifts/lift_479.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 480,
+      "file": "k7_raw_lifts/lift_480.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 481,
+      "file": "k7_raw_lifts/lift_481.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 482,
+      "file": "k7_raw_lifts/lift_482.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 483,
+      "file": "k7_raw_lifts/lift_483.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 484,
+      "file": "k7_raw_lifts/lift_484.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 485,
+      "file": "k7_raw_lifts/lift_485.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 486,
+      "file": "k7_raw_lifts/lift_486.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 487,
+      "file": "k7_raw_lifts/lift_487.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 488,
+      "file": "k7_raw_lifts/lift_488.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 489,
+      "file": "k7_raw_lifts/lift_489.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 490,
+      "file": "k7_raw_lifts/lift_490.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 491,
+      "file": "k7_raw_lifts/lift_491.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 492,
+      "file": "k7_raw_lifts/lift_492.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 493,
+      "file": "k7_raw_lifts/lift_493.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 494,
+      "file": "k7_raw_lifts/lift_494.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 495,
+      "file": "k7_raw_lifts/lift_495.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 496,
+      "file": "k7_raw_lifts/lift_496.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 497,
+      "file": "k7_raw_lifts/lift_497.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 498,
+      "file": "k7_raw_lifts/lift_498.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 499,
+      "file": "k7_raw_lifts/lift_499.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 500,
+      "file": "k7_raw_lifts/lift_500.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 501,
+      "file": "k7_raw_lifts/lift_501.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 502,
+      "file": "k7_raw_lifts/lift_502.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 503,
+      "file": "k7_raw_lifts/lift_503.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 504,
+      "file": "k7_raw_lifts/lift_504.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 505,
+      "file": "k7_raw_lifts/lift_505.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 506,
+      "file": "k7_raw_lifts/lift_506.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 507,
+      "file": "k7_raw_lifts/lift_507.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 508,
+      "file": "k7_raw_lifts/lift_508.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 509,
+      "file": "k7_raw_lifts/lift_509.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 510,
+      "file": "k7_raw_lifts/lift_510.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 511,
+      "file": "k7_raw_lifts/lift_511.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 512,
+      "file": "k7_raw_lifts/lift_512.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 513,
+      "file": "k7_raw_lifts/lift_513.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 514,
+      "file": "k7_raw_lifts/lift_514.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 515,
+      "file": "k7_raw_lifts/lift_515.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 516,
+      "file": "k7_raw_lifts/lift_516.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 517,
+      "file": "k7_raw_lifts/lift_517.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 518,
+      "file": "k7_raw_lifts/lift_518.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 519,
+      "file": "k7_raw_lifts/lift_519.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 520,
+      "file": "k7_raw_lifts/lift_520.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 521,
+      "file": "k7_raw_lifts/lift_521.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 522,
+      "file": "k7_raw_lifts/lift_522.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 523,
+      "file": "k7_raw_lifts/lift_523.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 524,
+      "file": "k7_raw_lifts/lift_524.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 525,
+      "file": "k7_raw_lifts/lift_525.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 526,
+      "file": "k7_raw_lifts/lift_526.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 527,
+      "file": "k7_raw_lifts/lift_527.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 528,
+      "file": "k7_raw_lifts/lift_528.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 529,
+      "file": "k7_raw_lifts/lift_529.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 530,
+      "file": "k7_raw_lifts/lift_530.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 531,
+      "file": "k7_raw_lifts/lift_531.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 532,
+      "file": "k7_raw_lifts/lift_532.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 533,
+      "file": "k7_raw_lifts/lift_533.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 534,
+      "file": "k7_raw_lifts/lift_534.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 535,
+      "file": "k7_raw_lifts/lift_535.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 536,
+      "file": "k7_raw_lifts/lift_536.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 537,
+      "file": "k7_raw_lifts/lift_537.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 538,
+      "file": "k7_raw_lifts/lift_538.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 539,
+      "file": "k7_raw_lifts/lift_539.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 540,
+      "file": "k7_raw_lifts/lift_540.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 541,
+      "file": "k7_raw_lifts/lift_541.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 542,
+      "file": "k7_raw_lifts/lift_542.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 543,
+      "file": "k7_raw_lifts/lift_543.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 544,
+      "file": "k7_raw_lifts/lift_544.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 545,
+      "file": "k7_raw_lifts/lift_545.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 546,
+      "file": "k7_raw_lifts/lift_546.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 547,
+      "file": "k7_raw_lifts/lift_547.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 548,
+      "file": "k7_raw_lifts/lift_548.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 549,
+      "file": "k7_raw_lifts/lift_549.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 550,
+      "file": "k7_raw_lifts/lift_550.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 551,
+      "file": "k7_raw_lifts/lift_551.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 552,
+      "file": "k7_raw_lifts/lift_552.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 553,
+      "file": "k7_raw_lifts/lift_553.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 554,
+      "file": "k7_raw_lifts/lift_554.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 555,
+      "file": "k7_raw_lifts/lift_555.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 556,
+      "file": "k7_raw_lifts/lift_556.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 557,
+      "file": "k7_raw_lifts/lift_557.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 558,
+      "file": "k7_raw_lifts/lift_558.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 559,
+      "file": "k7_raw_lifts/lift_559.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 560,
+      "file": "k7_raw_lifts/lift_560.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 561,
+      "file": "k7_raw_lifts/lift_561.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 562,
+      "file": "k7_raw_lifts/lift_562.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 563,
+      "file": "k7_raw_lifts/lift_563.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 564,
+      "file": "k7_raw_lifts/lift_564.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 565,
+      "file": "k7_raw_lifts/lift_565.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 566,
+      "file": "k7_raw_lifts/lift_566.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 567,
+      "file": "k7_raw_lifts/lift_567.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 568,
+      "file": "k7_raw_lifts/lift_568.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 569,
+      "file": "k7_raw_lifts/lift_569.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 570,
+      "file": "k7_raw_lifts/lift_570.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 571,
+      "file": "k7_raw_lifts/lift_571.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 572,
+      "file": "k7_raw_lifts/lift_572.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 573,
+      "file": "k7_raw_lifts/lift_573.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 574,
+      "file": "k7_raw_lifts/lift_574.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 575,
+      "file": "k7_raw_lifts/lift_575.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 576,
+      "file": "k7_raw_lifts/lift_576.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 577,
+      "file": "k7_raw_lifts/lift_577.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 578,
+      "file": "k7_raw_lifts/lift_578.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 579,
+      "file": "k7_raw_lifts/lift_579.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 580,
+      "file": "k7_raw_lifts/lift_580.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 581,
+      "file": "k7_raw_lifts/lift_581.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 582,
+      "file": "k7_raw_lifts/lift_582.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 583,
+      "file": "k7_raw_lifts/lift_583.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 584,
+      "file": "k7_raw_lifts/lift_584.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 585,
+      "file": "k7_raw_lifts/lift_585.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 586,
+      "file": "k7_raw_lifts/lift_586.json",
+      "field": "original_lift"
+    },
+    {
+      "lift_id": 587,
+      "file": "k7_raw_lifts/lift_587.json",
+      "field": "original_lift"
+    }
+  ]
+}

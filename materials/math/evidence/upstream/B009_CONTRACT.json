@@ -1,0 +1,25 @@
+{
+  "accepted_main_scope": {
+    "n": "all natural n>=6",
+    "parameters": "all natural i,j,k,e with n=i+j+k+e+3",
+    "baseline": "literal B=5^i 34 2^j 43 5^k 34 2^e",
+    "conjugation_count": "0<=c<=4",
+    "conjugations": "IDs 6..13; original weak gap chronology and repeated occurrences retained",
+    "CORE": "every original conjugation gap < F0=i+j+k+6",
+    "initial": "same S_n=(X y^n x Y^(n+1), x Y^n)",
+    "endpoint": "strict ordered free-group pair (x,y)",
+    "i_zero_assumed": false,
+    "LT_dependency": false
+  },
+  "mother_domain": "Fixed original n>=6, same S_n=(X y^n x Y^(n+1), x Y^n), strict ordered (x,y), NoFlip literal B, unit atomic cost, total length<=n+7.",
+  "connection_scope": "Accepted008 specified existence-preserving cover of a shortest short NoFlip literal B success at that same n.",
+  "chain": [
+    "Assume a successful word exists in the specified short literal B mother domain for fixed n>=6.",
+    "Choose a shortest such successful word. Accepted008 and its inherited accepted connections yield a successful CORE representative from the same original S_n within the short budget.",
+    "The literal B baseline has length n+3, so the budget permits at most four conjugations. CORE means all their original gaps are strictly below F0.",
+    "Accepted009 excludes every such CORE representative, including zero runs, repeated same-gap events, rank-zero critical, all natural i and e, and conjugation counts zero through four.",
+    "Contradiction. Therefore no successful word exists in the specified short NoFlip literal B mother domain."
+  ],
+  "raw_equality_classification_claimed": false,
+  "unbounded_B_excluded": false
+}

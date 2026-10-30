@@ -1,1 +1,33 @@
-# vesta-noflip-minimality-candidate
+# A conditional n+8 minimality candidate in the NoFlip model
+
+A snapshot candidate for static review of a lower-bound/minimality contribution, referring to the n+8 upper-bound construction in my earlier submission ACC-P000019. That submission and acc-nplus8-lean remain unchanged.
+
+I am not a mathematics expert and cannot assess or guarantee this candidate's correctness myself. I want to bring candidate results and evidence developed through exploration with GPT and Claude to experts able to judge them. My role has been choosing questions and directions, requesting checks from AI, organizing evidence, and deciding what to submit.
+
+Work in the free group F(x,y), with X=x⁻¹ and Y=y⁻¹. For every nonnegative integer n, start from S_n=(X y^n x Y^(n+1), xY^n) and require the exact ordered target (x,y). Allowed operations on (r,s) are (rs,s), (rs⁻¹,s), (r,sr), (r,sr⁻¹), and conjugation of either component by g∈{x,X,y,Y}. Component inversions are excluded. Every atomic operation costs one, the raw sequence runs left to right, and a step acting trivially still counts. [L1](materials/math/PROBLEM.md)
+
+The central candidate C25 is conditional: assuming the explicitly stated mathematical interfaces, no NoFlip sequence of length L≤n+7 reaches (x,y) from S_n for any n≥25. The assumptions comprise short-success q reduction and c0/c1/q3 exclusions (F-T1/F-0/F-T2/F-T4), q=n+5 coverage and raw reconstruction (P1/P2/P3), and K1-Q/K1-φ/F-T6 and K7-Q/K7-φ on their original integer domains. The interface statements retain their exact domains, zero runs, original gaps, within-gap order and divisibility conditions. [L2](materials/math/DEPENDENCY_CONTRACTS.md) / [L3](materials/math/COMPOSITION_PROOF.md)
+
+Combining this with the specified finite interfaces F-T3/P7 and the upper bound U in the same model gives the candidate minimum-length formula d(0)=4, d(1)=7, d(2)=9, and d(n)=n+8 for all n≥3. I do not claim that human experts have reviewed every assumption. Finite results are not extrapolated to all n. This is not a proof or disproof of general AC or Stable AC, nor a minimum-length claim for a different model allowing inversions or other operations. [L1](materials/math/PROBLEM.md) / [L2](materials/math/DEPENDENCY_CONTRACTS.md) / [L3](materials/math/COMPOSITION_PROOF.md) / [L6](materials/p7/PROOF.md) / [L7](materials/math/evidence/definitions/Verify/SevenPrefix.lean.txt)
+
+This snapshot supplies original proofs, saved domain/lift/coefficient-certificate data, and limited Lean source concerning the upper construction and F-T1/F-0. Detailed AI review verdicts and internal operator records are not included. AI assessments, Lean propositions and their premises, and human expert evaluation are distinct. Human expert evaluation is unconfirmed in the saved records used here. Whole-minimality Lean verification and any new successful mathematical execution are not claimed. [L4](README.md#checks-and-limits)
+
+I seek static scrutiny of whether the composition follows from the stated premises, including parameter ranges, operations, costs, inference directions, and missing or circular dependencies. This draft does not claim a completed reproof of every premise. Whether to undertake a review is the reader's decision; corrections will be reflected in the materials.
+
+Related submission: ACC-P000019. The references below are relative links within this snapshot. No fictitious public repository URL or commit is supplied. Whether to publish remains a separate decision.
+
+## Reading order
+
+Read the [model](materials/math/PROBLEM.md), [interface contracts](materials/math/DEPENDENCY_CONTRACTS.md), [composition](materials/math/COMPOSITION_PROOF.md), then the [mathematical evidence index](materials/math/INDEX.md). This is composition under explicit mathematical interfaces, not a completed independent reproof of all dependencies. Necessary premises, methods, formalization scope and limits are visible; the earlier private staged-disclosure workflow is not imposed on this public selection.
+
+The complete [P7 original Proof](materials/p7/PROOF.md) and the earlier [cover excerpt](materials/math/evidence/upstream/cover.md) have different bytes. [SOURCE_MAP.json](SOURCE_MAP.json) records their exact line projection without classifying the omitted lines. The legacy [008](materials/g2/B008/PROOF.txt)/[009](materials/g2/B009/PROOF.txt) Proofs clarify an assumed B009 interface. [G3 source index](materials/g3/SOURCE_INDEX.json) supplies 35 local sources for reading propositions and premises.
+
+## Checks and limits
+
+Only file/hash/text/JSON/reference inspection and sensitive-information pattern checks were performed for this export. No mathematical checker, target code, tests, Lean compiler or new computation was run. Historical claims inside source documents remain statements by the original material-creation/AI roles, not a new certification or evidence of human review. Whether to undertake a review remains the reader's decision.
+
+Lean source is supplied for the upper construction and limited F-T1/F-0 development. Detailed confirmation logs, compiler/kernel/runtime, external package source/cache closure and the full repository/Lake root are not supplied as an execution environment. No whole-minimality Lean verification or successful unrun command is claimed. Full G2 underlying certificates are not bundled: this request assumes the B009 interface, and does not enable full independent G2 certificate verification. Current K2/c4 artifacts do not replace the old fixed evidence.
+
+Selected original data/Lean and other unedited mathematical-source files retain their exact bytes. [k7_q.public.md](materials/math/evidence/upstream/k7_q.public.md) is explicitly a new public text edition: only original line11, an operational receipt paragraph, is omitted; every other line is byte-preserved. The mathematical index changes only that filename reference. [SOURCE_MAP.json](SOURCE_MAP.json) records both original and edited hashes; these two edited files are not represented as identical copies.
+
+See [MANIFEST.json](MANIFEST.json) and [EXPORT_CHECKS.json](EXPORT_CHECKS.json). Source identity and text/reference checks are not proof checking. Corrections will be reflected in the materials. [日本語補助](README.ja.md)

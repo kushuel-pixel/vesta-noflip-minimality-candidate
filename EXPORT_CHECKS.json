@@ -1,0 +1,43 @@
+{
+  "scope": "File/hash/text/JSON/reference checks only; no proof checking or target execution.",
+  "Markdown_links_checked": 48,
+  "missing_Markdown_links": 0,
+  "math_data_index_refs_checked": 1178,
+  "missing_math_data_refs": 0,
+  "local_Lean_sources": 35,
+  "import_refs_checked": 43,
+  "missing_local_import_source": 0,
+  "external_packages_not_bundled": [
+    "Mathlib"
+  ],
+  "sensitive_pattern_categories": [
+    "private_service_URL",
+    "private_protocol",
+    "home_absolute_path",
+    "other_local_abs",
+    "email",
+    "service_saved_id",
+    "internal_id_fields",
+    "uuid",
+    "credential_assignment",
+    "known_token",
+    "private_key"
+  ],
+  "sensitive_pattern_findings": 0,
+  "dependency_Git_revisions_retained": 9,
+  "revision_note": "Dependency repository Git commits, not private storage revisions. Network availability not queried.",
+  "public_text_editions": [
+    {
+      "destination": "materials/math/INDEX.md",
+      "operation": "Change only k7_q.md filename reference to k7_q.public.md.",
+      "bytes_identical_to_original": false
+    },
+    {
+      "destination": "materials/math/evidence/upstream/k7_q.public.md",
+      "operation": "Omit original line11 only; every other line byte-preserved.",
+      "bytes_identical_to_original": false
+    }
+  ],
+  "new_math_code_Lean_test_execution": false,
+  "limit": "Scoped pattern/reference inspection is not mathematical validation or a reproduced execution environment."
+}
