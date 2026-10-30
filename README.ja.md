@@ -10,7 +10,7 @@
 
 さらに指定有限域F-T3/P7と同モデルの上界Uを前提に接続すると、最小成功長dについてd(0)=4、d(1)=7、d(2)=9、全n≥3でd(n)=n+8という合成候補になります。全ての前提を人間が査読済みとは主張しません。有限結果から全nへ外挿せず、一般AC/Stable ACの証明・反証や、反転等を許す別モデルの最短値へは広げません。[L1](materials/math/PROBLEM.md) / [L2](materials/math/DEPENDENCY_CONTRACTS.md) / [L3](materials/math/COMPOSITION_PROOF.md) / [L6](materials/p7/PROOF.md) / [L7](materials/math/evidence/definitions/Verify/SevenPrefix.lean.txt)
 
-このsnapshotは原Proof、原域・lift・係数証書等の保存資料、上界およびF-T1/F-0の限定Leanソースを収録します。AIレビュー判定の詳細と内部管理記録は含めません。AIの検討結果、Leanの命題と前提、人間専門家の評価は別であり、人間専門家の評価は参照した保存資料では未確認です。全最短性Lean検証済みとはせず、この選抜で新しい数学実行もしていません。[L4](README.ja.md#検証と限界)
+このsnapshotは原Proof、原域・lift・係数証書等の保存資料、上界およびF-T1/F-0の限定Leanソースを収録します。[保存AI評価記録の案内](docs/AI_EVALUATION_RECORD_GUIDE.md)で一部の記録の範囲・限界を示しますが、評価票全文と内部管理記録は含めません。AIの検討結果、Leanの命題と前提、人間専門家の評価は別であり、人間専門家の評価は参照した保存資料では未確認です。全最短性Lean検証済みとはせず、この選抜で新しい数学実行もしていません。[L4](README.ja.md#検証と限界)
 
 お願いしたいのは、明示前提から合成が導かれるか、n域・操作・費用・推論方向・依存の循環や不足を静的に点検していただくことです。前提自体の全再証明を今回完了したとはしていません。点検を引き受けるかどうかは読者の判断であり、指摘は訂正に反映します。
 
@@ -28,6 +28,6 @@
 
 Lean原sourceは上界とF-T1/F-0の限定範囲です。詳細な確認ログ、compiler/kernel/runtime、外部package/source/cache、全repo/Lake rootを実行再現環境として供給していません。全最短性Lean検証済みや未実施コマンド成功を主張しません。G2原Proofの全巨大証書は未同梱で、B009は今回の仮定interfaceです。このsnapshotだけでG2全証書を独立検証できるとはせず、現K2/c4結果で旧固定証拠を代替しません。
 
-選択した原data/Leanと未編集の数学原資料はbytesを保持しました。ただし[k7_q.public.md](materials/math/evidence/upstream/k7_q.public.md)は、原11行の運用受領段落だけを除いた新公開編集版です。他の行はbytesを保ち、数学索引はそのファイル名だけを直しました。[SOURCE_MAP](SOURCE_MAP.json)で両方の原本/編集後hashを明示し、この2編集を同bytesとは称しません。
+選択した原data/Leanと未編集の数学原資料はbytesを保持しました。ただし[k7_q.public.md](materials/math/evidence/upstream/k7_q.public.md)は、原11行の運用受領段落だけを除いた新公開編集版です。他の行はbytesを保ち、基底snapshotの数学索引はそのファイル名だけを直しました。[SOURCE_MAP](SOURCE_MAP.json)で両方の原本/編集後hashを明示し、基底のこの2編集を同bytesとは称しません。interface表の説明補足と評価案内は、それらとは別の文書更新として記録しています。
 
 [MANIFEST](MANIFEST.json)と[公開選抜の限定点検](EXPORT_CHECKS.json)を参照してください。同一性・文字列参照の検査は数学的証明の検証ではありません。指摘は訂正に反映します。[English](README.md)

@@ -1,29 +1,35 @@
 {
-  "schema": "NOFLIP_PUBLIC_SNAPSHOT_001",
+  "schema": "NOFLIP_PUBLIC_SNAPSHOT_002",
   "files": [
     {
       "path": "EXPORT_CHECKS.json",
-      "bytes": 1455,
-      "sha256": "438b09bbba6c67700501c082653aae539267d31ee4bbb6305d2e1e1a27f5a372",
-      "crc32": "74bd327b"
+      "bytes": 2611,
+      "sha256": "56879c8f71f6d2f7bdc36369a96a122b87645992201527a0c1fef65c23c8b712",
+      "crc32": "19a87996"
     },
     {
       "path": "README.ja.md",
-      "bytes": 6041,
-      "sha256": "b883d2cba0c2c4e58a034f0bde613e4876121f8c98d7cb203e6be04ca9368da5",
-      "crc32": "a7765be8"
+      "bytes": 6291,
+      "sha256": "544fa11979bdadf3bddbf4f16700883553b1b30547b86d7c37d4c58cd5df3157",
+      "crc32": "8686457e"
     },
     {
       "path": "README.md",
-      "bytes": 6274,
-      "sha256": "60a5b7258c4de586ace3ef65ef29b80b258f16576daa1db3f200ff62d0a776c7",
-      "crc32": "2f0c0a47"
+      "bytes": 6518,
+      "sha256": "c7b534cf4040a9636cd9ab51559553837f644abb537fd81ad5146d941d1936d9",
+      "crc32": "2a68e43e"
     },
     {
       "path": "SOURCE_MAP.json",
-      "bytes": 393833,
-      "sha256": "4b6cc678f21736e7da9005f0ef59b8c9059cff85a2011710dbc21cb5508fc87d",
-      "crc32": "435e5129"
+      "bytes": 396140,
+      "sha256": "7fd8c0bc1a188c37a78f7cffe19df4f909910508e71f98999efe15a06a69e579",
+      "crc32": "fd62b5ad"
+    },
+    {
+      "path": "docs/AI_EVALUATION_RECORD_GUIDE.md",
+      "bytes": 6494,
+      "sha256": "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e",
+      "crc32": "c9346eef"
     },
     {
       "path": "materials/g2/B008/PROOF.txt",
@@ -279,9 +285,9 @@
     },
     {
       "path": "materials/math/DEPENDENCY_CONTRACTS.md",
-      "bytes": 2755,
-      "sha256": "deb3d5797934fd10b040677fea6b713d76d8bd3e5d1fa9074ec4be859ade803c",
-      "crc32": "f4e6fe94"
+      "bytes": 3824,
+      "sha256": "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7",
+      "crc32": "4ca810f9"
     },
     {
       "path": "materials/math/EVIDENCE_BOUNDARIES.md",
@@ -291,9 +297,9 @@
     },
     {
       "path": "materials/math/FILE_INDEX.json",
-      "bytes": 135480,
-      "sha256": "dacdce0f8bb84a680a3334c3f2f36b1e9db1821ed66f4445aafbf415bb0fe6af",
-      "crc32": "16b3e44b"
+      "bytes": 135526,
+      "sha256": "56b12cf1cc5dc190cd1dfa6c7faf06f47d75921754fd51431eaa7dbe60d7fe5c",
+      "crc32": "7d3850de"
     },
     {
       "path": "materials/math/INDEX.md",
@@ -4311,9 +4317,21 @@
     }
   ],
   "self_not_listed": true,
-  "status": "LOCAL_PUBLIC_CANDIDATE_NOT_UPLOADED_OR_PUBLISHED",
+  "status": "PRIVATE_REPOSITORY_DOCUMENTATION_CANDIDATE_NOT_PUBLISHED",
   "mathematics": "CONDITIONAL_CANDIDATE_NOT_NEW_ACCEPTANCE",
   "source_map": "SOURCE_MAP.json",
-  "edited_source_files": 2,
-  "complete_execution_environment": false
+  "edited_source_files": 3,
+  "complete_execution_environment": false,
+  "historical_base": {
+    "commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
+    "manifest_pin": {
+      "bytes": 154849,
+      "sha256": "e2ce7dc20cb5a8593e2a4ac5d3f48130233c4e8b492c41c156d81d36f52a7b8b",
+      "crc32": "99b412a5"
+    },
+    "status": "LOCAL_PUBLIC_CANDIDATE_NOT_UPLOADED_OR_PUBLISHED",
+    "edited_source_files": 2
+  },
+  "documentation_revision": "002",
+  "status_note": "The base LOCAL/not-uploaded label is historical; this revision is prepared for the approved private Git update. No public release or competition submission is claimed."
 }

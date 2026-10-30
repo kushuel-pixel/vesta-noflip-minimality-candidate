@@ -14,9 +14,9 @@
     },
     {
       "path": "DEPENDENCY_CONTRACTS.md",
-      "bytes": 2755,
-      "sha256": "deb3d5797934fd10b040677fea6b713d76d8bd3e5d1fa9074ec4be859ade803c",
-      "crc32": "f4e6fe94"
+      "bytes": 3824,
+      "sha256": "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7",
+      "crc32": "4ca810f9"
     },
     {
       "path": "EVIDENCE_BOUNDARIES.md",
@@ -4034,5 +4034,5 @@
     }
   ],
   "self_not_listed": true,
-  "note": "Selected public mathematics; identity/editions in root SOURCE_MAP.json. No proof-verification claim."
+  "note": "Selected mathematics; interface-contract editorial clarification included. Identity/editions in root SOURCE_MAP.json. No proof-verification claim."
 }

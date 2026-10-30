@@ -39,5 +39,29 @@
     }
   ],
   "new_math_code_Lean_test_execution": false,
-  "limit": "Scoped pattern/reference inspection is not mathematical validation or a reproduced execution environment."
+  "limit": "Scoped pattern/reference inspection is not mathematical validation or a reproduced execution environment.",
+  "record_role": "Historical base export observations; top-level original counts apply to the base commit.",
+  "historical_base_commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
+  "current_documentation_update": {
+    "revision": "002",
+    "date_utc": "2026-10-30",
+    "state": "private repository candidate, not published",
+    "scope": "Two approved documentation files plus necessary entry/index/provenance updates; file/hash/text/JSON/reference inspection only.",
+    "Markdown_links_checked": 55,
+    "missing_Markdown_links": 0,
+    "approved_source_file_pins": {
+      "materials/math/DEPENDENCY_CONTRACTS.md": [
+        3824,
+        "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7"
+      ],
+      "docs/AI_EVALUATION_RECORD_GUIDE.md": [
+        6494,
+        "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e"
+      ]
+    },
+    "mathematical_evidence_bytes_changed": false,
+    "new_mathematical_or_Lean_execution": false,
+    "sensitive_information_scan_scope": "Changed repository text files only; unchanged base relies on its historical inspection.",
+    "sensitive_information_pattern_findings": 0
+  }
 }

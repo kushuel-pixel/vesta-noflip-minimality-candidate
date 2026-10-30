@@ -1,6 +1,34 @@
 {
-  "schema": "NOFLIP_PUBLIC_SOURCE_MAP_001",
+  "schema": "NOFLIP_PUBLIC_SOURCE_MAP_002",
   "files": [
+    {
+      "destination": "README.ja.md",
+      "output_pin": {
+        "bytes": 6291,
+        "sha256": "544fa11979bdadf3bddbf4f16700883553b1b30547b86d7c37d4c58cd5df3157",
+        "crc32": "8686457e"
+      },
+      "transform": "EDITORIAL_DOCUMENTATION_INDEX_OR_ENTRY_UPDATE"
+    },
+    {
+      "destination": "README.md",
+      "output_pin": {
+        "bytes": 6518,
+        "sha256": "c7b534cf4040a9636cd9ab51559553837f644abb537fd81ad5146d941d1936d9",
+        "crc32": "2a68e43e"
+      },
+      "transform": "EDITORIAL_DOCUMENTATION_INDEX_OR_ENTRY_UPDATE"
+    },
+    {
+      "destination": "docs/AI_EVALUATION_RECORD_GUIDE.md",
+      "output_pin": {
+        "bytes": 6494,
+        "sha256": "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e",
+        "crc32": "c9346eef"
+      },
+      "transform": "NEW_EDITORIAL_DOCUMENT",
+      "approved_revision": "002"
+    },
     {
       "destination": "materials/g2/B008/PROOF.txt",
       "output_pin": {
@@ -634,11 +662,11 @@
     {
       "destination": "materials/math/DEPENDENCY_CONTRACTS.md",
       "output_pin": {
-        "bytes": 2755,
-        "sha256": "deb3d5797934fd10b040677fea6b713d76d8bd3e5d1fa9074ec4be859ade803c",
-        "crc32": "f4e6fe94"
+        "bytes": 3824,
+        "sha256": "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7",
+        "crc32": "4ca810f9"
       },
-      "transform": "EXACT_SELECTED_BYTES",
+      "transform": "EDITORIAL_DOCUMENTATION_REVISION_FROM_RETAINED_SOURCE",
       "source_logical_path": "H002/DEPENDENCY_CONTRACTS.md",
       "source_pin": {
         "bytes": 2755,
@@ -660,6 +688,15 @@
         "sha256": "11f0945120d8be3a1815b80992d9933fe71d4ca3a83c6bf17a76abc5f0768168",
         "crc32": "26207633"
       }
+    },
+    {
+      "destination": "materials/math/FILE_INDEX.json",
+      "output_pin": {
+        "bytes": 135526,
+        "sha256": "56b12cf1cc5dc190cd1dfa6c7faf06f47d75921754fd51431eaa7dbe60d7fe5c",
+        "crc32": "7d3850de"
+      },
+      "transform": "EDITORIAL_DOCUMENTATION_INDEX_OR_ENTRY_UPDATE"
     },
     {
       "destination": "materials/math/INDEX.md",
@@ -10695,33 +10732,6 @@
         "sha256": "47587954635272e196d875fdbc355e8f3683f96309129cce85598b163ef11556",
         "crc32": "53584b94"
       }
-    },
-    {
-      "destination": "README.md",
-      "output_pin": {
-        "bytes": 6274,
-        "sha256": "60a5b7258c4de586ace3ef65ef29b80b258f16576daa1db3f200ff62d0a776c7",
-        "crc32": "2f0c0a47"
-      },
-      "transform": "NEW_PUBLIC_EDITORIAL"
-    },
-    {
-      "destination": "README.ja.md",
-      "output_pin": {
-        "bytes": 6041,
-        "sha256": "b883d2cba0c2c4e58a034f0bde613e4876121f8c98d7cb203e6be04ca9368da5",
-        "crc32": "a7765be8"
-      },
-      "transform": "NEW_PUBLIC_EDITORIAL"
-    },
-    {
-      "destination": "materials/math/FILE_INDEX.json",
-      "output_pin": {
-        "bytes": 135480,
-        "sha256": "dacdce0f8bb84a680a3334c3f2f36b1e9db1821ed66f4445aafbf415bb0fe6af",
-        "crc32": "16b3e44b"
-      },
-      "transform": "NEW_PUBLIC_EDITORIAL"
     }
   ],
   "public_text_editions": [
@@ -10757,6 +10767,22 @@
       "operation": "Omit original line11 only; every other line byte-preserved.",
       "reason": "operational transport/receipt paragraph not needed for the mathematical interface",
       "bytes_identical_to_original": false
+    },
+    {
+      "destination": "materials/math/DEPENDENCY_CONTRACTS.md",
+      "source_logical_path": "H002/DEPENDENCY_CONTRACTS.md",
+      "source_pin": {
+        "bytes": 2755,
+        "sha256": "deb3d5797934fd10b040677fea6b713d76d8bd3e5d1fa9074ec4be859ade803c",
+        "crc32": "f4e6fe94"
+      },
+      "public_pin": {
+        "bytes": 3824,
+        "sha256": "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7",
+        "crc32": "4ca810f9"
+      },
+      "operation": "Add the existing K1-N25-NONARRIVAL alias with its original domain and a link to the saved-assessment guide; disclose omitted evaluation records. No mathematical Proof/data/Lean edit.",
+      "bytes_identical_to_original": false
     }
   ],
   "P7_original_and_excerpt": {
@@ -10790,7 +10816,7 @@
     "note": "Complete original supplied; no mathematical/status classification assigned to the omitted lines."
   },
   "exclusions": [
-    "Detailed AI review verdicts",
+    "Full AI review tickets and detailed comparison records; only the limited documentation guide is supplied.",
     "Operator records/private stage wrappers",
     "Full G2 underlying certificates",
     "Complete Lean execution environment"
@@ -10827,5 +10853,31 @@
       "change": "remove duplicate display-only path after L1 link",
       "mathscope_changed": false
     }
-  ]
+  ],
+  "own_editorial_reference_fix_base_commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
+  "documentation_revision": {
+    "revision": "002",
+    "base_commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
+    "date_utc": "2026-10-30",
+    "state": "private repository candidate, not published",
+    "mathematical_evidence_unchanged_since_base": true,
+    "approved_document_pins": {
+      "materials/math/DEPENDENCY_CONTRACTS.md": {
+        "bytes": 3824,
+        "sha256": "905424cc9f56df4251bc10135f782b2c6bf2053f380bfce2e50e481b58b382a7",
+        "crc32": "4ca810f9"
+      },
+      "docs/AI_EVALUATION_RECORD_GUIDE.md": {
+        "bytes": 6494,
+        "sha256": "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e",
+        "crc32": "c9346eef"
+      }
+    },
+    "entry_and_index_updates": [
+      "README.md",
+      "README.ja.md",
+      "materials/math/FILE_INDEX.json"
+    ],
+    "historical_note": "The own_editorial_reference_fix array describes the base snapshot, not the current README bytes. Original source pins and older commits remain historical."
+  }
 }
