@@ -1,0 +1,1 @@
+# vesta-noflip-minimality-candidate
