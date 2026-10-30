@@ -66,6 +66,19 @@
     "recorded_commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31"
   },
   "current_documentation_update": {
+    "revision": "004 candidate",
+    "date_utc": "2026-10-30",
+    "record_role": "preparation record; not the repository live visibility",
+    "scope": "One two-sentence G2 history paragraph in guide section3 plus necessary pin provenance only",
+    "Markdown_links_checked": 65,
+    "missing_Markdown_links": 0,
+    "original_mathematical_source_bytes_changed": false,
+    "README_bytes_changed": false,
+    "new_math_Lean_target_execution": false,
+    "private_information_scope": "four candidate overlay files",
+    "sensitive_information_findings": 0
+  },
+  "historical_documentation_update_003": {
     "revision": "003 candidate",
     "date_utc": "2026-10-30",
     "record_role": "LOCAL preparation record; not the repository live visibility",
@@ -75,6 +88,7 @@
     "original_mathematical_source_bytes_changed": false,
     "new_math_Lean_target_execution": false,
     "private_information_scope": "six candidate overlay files",
-    "sensitive_information_findings": 0
+    "sensitive_information_findings": 0,
+    "recorded_commit": "5f52b138d3451f2f4b9bf6ec76246d79f76cfd35"
   }
 }

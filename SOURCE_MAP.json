@@ -1,5 +1,5 @@
 {
-  "schema": "NOFLIP_PUBLIC_SOURCE_MAP_003_CANDIDATE",
+  "schema": "NOFLIP_PUBLIC_SOURCE_MAP_004_CANDIDATE",
   "files": [
     {
       "destination": "README.ja.md",
@@ -24,13 +24,13 @@
     {
       "destination": "docs/AI_EVALUATION_RECORD_GUIDE.md",
       "output_pin": {
-        "bytes": 8533,
-        "sha256": "8872384cd2b966db1a4e487afe35a7170fc2954bb55047f5ae8ffaf6695fcc95",
-        "crc32": "2699a869"
+        "bytes": 9101,
+        "sha256": "982ea27f54bbf6ecb5250953edb3724d959273ed0013d715b54e1833b1da15b2",
+        "crc32": "2af3bcba"
       },
       "transform": "EDITORIAL_DOCUMENTATION_CLARIFICATION",
       "historical_approved_revision": "002",
-      "documentation_revision_candidate": "003"
+      "documentation_revision_candidate": "004"
     },
     {
       "destination": "materials/g2/B008/PROOF.txt",
@@ -10859,46 +10859,27 @@
   ],
   "own_editorial_reference_fix_base_commit": "e56a12202166c30867d1b46a9648feeb30949bb3",
   "documentation_revision": {
-    "revision": "003 candidate",
-    "base_commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31",
+    "revision": "004 candidate",
+    "base_commit": "5f52b138d3451f2f4b9bf6ec76246d79f76cfd35",
     "date_utc": "2026-10-30",
     "record_role": "versioned preparation record, not GitHub live visibility",
     "original_mathematical_sources_unchanged": true,
+    "README_unchanged": true,
     "previous_editorial_pins": {
-      "README.md": {
-        "bytes": 6518,
-        "sha256": "c7b534cf4040a9636cd9ab51559553837f644abb537fd81ad5146d941d1936d9",
-        "crc32": "2a68e43e"
-      },
-      "README.ja.md": {
-        "bytes": 6291,
-        "sha256": "544fa11979bdadf3bddbf4f16700883553b1b30547b86d7c37d4c58cd5df3157",
-        "crc32": "8686457e"
-      },
-      "docs/AI_EVALUATION_RECORD_GUIDE.md": {
-        "bytes": 6494,
-        "sha256": "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e",
-        "crc32": "c9346eef"
-      }
-    },
-    "editorial_pins": {
-      "README.md": {
-        "bytes": 7247,
-        "sha256": "0eaca5707958d42712cfe616d6d47d21cd2cf4b545d1cca9ed4a906ca5775e61",
-        "crc32": "b0251a69"
-      },
-      "README.ja.md": {
-        "bytes": 7066,
-        "sha256": "8a01c97be6bae5882abba32e3350e2be25b6fca8b4edf1bbe6aa473c2be7aa96",
-        "crc32": "b592acb4"
-      },
       "docs/AI_EVALUATION_RECORD_GUIDE.md": {
         "bytes": 8533,
         "sha256": "8872384cd2b966db1a4e487afe35a7170fc2954bb55047f5ae8ffaf6695fcc95",
         "crc32": "2699a869"
       }
     },
-    "scope": "State/history distinctions, attribution scope, reading entry and limited terminology notes; no new mathematical acceptance"
+    "editorial_pins": {
+      "docs/AI_EVALUATION_RECORD_GUIDE.md": {
+        "bytes": 9101,
+        "sha256": "982ea27f54bbf6ecb5250953edb3724d959273ed0013d715b54e1833b1da15b2",
+        "crc32": "2af3bcba"
+      }
+    },
+    "scope": "One G2 author-stage status/scope paragraph; no other optional edits or new mathematical acceptance"
   },
   "documentation_revision_history": [
     {
@@ -10926,6 +10907,49 @@
       ],
       "historical_note": "The own_editorial_reference_fix array describes the base snapshot, not the current README bytes. Original source pins and older commits remain historical.",
       "recorded_commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31"
+    },
+    {
+      "revision": "003 candidate",
+      "base_commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31",
+      "date_utc": "2026-10-30",
+      "record_role": "versioned preparation record, not GitHub live visibility",
+      "original_mathematical_sources_unchanged": true,
+      "previous_editorial_pins": {
+        "README.md": {
+          "bytes": 6518,
+          "sha256": "c7b534cf4040a9636cd9ab51559553837f644abb537fd81ad5146d941d1936d9",
+          "crc32": "2a68e43e"
+        },
+        "README.ja.md": {
+          "bytes": 6291,
+          "sha256": "544fa11979bdadf3bddbf4f16700883553b1b30547b86d7c37d4c58cd5df3157",
+          "crc32": "8686457e"
+        },
+        "docs/AI_EVALUATION_RECORD_GUIDE.md": {
+          "bytes": 6494,
+          "sha256": "9bc4fd3c2da2092f408a65c2b3954fcb62f85c69fc2f5fc544fdc3bf1ff21c4e",
+          "crc32": "c9346eef"
+        }
+      },
+      "editorial_pins": {
+        "README.md": {
+          "bytes": 7247,
+          "sha256": "0eaca5707958d42712cfe616d6d47d21cd2cf4b545d1cca9ed4a906ca5775e61",
+          "crc32": "b0251a69"
+        },
+        "README.ja.md": {
+          "bytes": 7066,
+          "sha256": "8a01c97be6bae5882abba32e3350e2be25b6fca8b4edf1bbe6aa473c2be7aa96",
+          "crc32": "b592acb4"
+        },
+        "docs/AI_EVALUATION_RECORD_GUIDE.md": {
+          "bytes": 8533,
+          "sha256": "8872384cd2b966db1a4e487afe35a7170fc2954bb55047f5ae8ffaf6695fcc95",
+          "crc32": "2699a869"
+        }
+      },
+      "scope": "State/history distinctions, attribution scope, reading entry and limited terminology notes; no new mathematical acceptance",
+      "recorded_commit": "5f52b138d3451f2f4b9bf6ec76246d79f76cfd35"
     }
   ]
 }

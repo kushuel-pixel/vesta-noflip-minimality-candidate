@@ -1,11 +1,11 @@
 {
-  "schema": "NOFLIP_PUBLIC_SNAPSHOT_003_CANDIDATE",
+  "schema": "NOFLIP_PUBLIC_SNAPSHOT_004_CANDIDATE",
   "files": [
     {
       "path": "EXPORT_CHECKS.json",
-      "bytes": 3229,
-      "sha256": "05a5a95c581ee4188903da6c1f2a9db3532963ea6fed1b60631685a6b08fe8bb",
-      "crc32": "8574b3c7"
+      "bytes": 3900,
+      "sha256": "a50123d66095692580876a23e5489cef7570c8866c65ed41ea396523bade6406",
+      "crc32": "ab68a84c"
     },
     {
       "path": "README.ja.md",
@@ -21,15 +21,15 @@
     },
     {
       "path": "SOURCE_MAP.json",
-      "bytes": 398000,
-      "sha256": "26c7dd574626e95aba89cff5f871d11b5534f1399f86aa8276df25829cdea11f",
-      "crc32": "fb673c1c"
+      "bytes": 399017,
+      "sha256": "dc71988a0f226484f0961b4eed1d070ca0043c94418b9827b477bcc8eaed6e53",
+      "crc32": "bc79dd03"
     },
     {
       "path": "docs/AI_EVALUATION_RECORD_GUIDE.md",
-      "bytes": 8533,
-      "sha256": "8872384cd2b966db1a4e487afe35a7170fc2954bb55047f5ae8ffaf6695fcc95",
-      "crc32": "2699a869"
+      "bytes": 9101,
+      "sha256": "982ea27f54bbf6ecb5250953edb3724d959273ed0013d715b54e1833b1da15b2",
+      "crc32": "2af3bcba"
     },
     {
       "path": "materials/g2/B008/PROOF.txt",
@@ -4332,7 +4332,7 @@
     "status": "LOCAL_PUBLIC_CANDIDATE_NOT_UPLOADED_OR_PUBLISHED",
     "edited_source_files": 2
   },
-  "documentation_revision": "003 candidate",
+  "documentation_revision": "004 candidate",
   "status_note": "This is a versioned file-set/preparation record. Live repository visibility is controlled by GitHub settings; a public release is not asserted.",
   "historical_documentation_revision_002": {
     "commit": "e7d947f5eaae406508dbe2a0ecb0454cab7e5f31",
@@ -4343,5 +4343,15 @@
     },
     "status": "PRIVATE_REPOSITORY_DOCUMENTATION_CANDIDATE_NOT_PUBLISHED",
     "status_note": "The base LOCAL/not-uploaded label is historical; this revision is prepared for the approved private Git update. No public release or competition submission is claimed."
+  },
+  "historical_documentation_revision_003": {
+    "commit": "5f52b138d3451f2f4b9bf6ec76246d79f76cfd35",
+    "manifest_pin": {
+      "bytes": 156148,
+      "sha256": "4bf22376eb616c0f34d8535bef7b5218b587c57341fc106ff552d85661a89121",
+      "crc32": "32ff1085"
+    },
+    "status": "DOCUMENTATION_SNAPSHOT_CANDIDATE_VISIBILITY_NOT_ASSERTED",
+    "status_note": "This is a versioned file-set/preparation record. Live repository visibility is controlled by GitHub settings; a public release is not asserted."
   }
 }
